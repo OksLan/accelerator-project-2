@@ -1,4 +1,191 @@
-// Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
+@import "common/fonts";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1px 0;
+
+  @media screen and (width >= 768px)and (width <= 1365px) {
+    width: 678px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 290px;
+  }
+}
+
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (width >= 768px)and (width <= 1365px) {
+    max-width: 678px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    max-width: 290px;
+  }
+}
+
+img {
+  display: block;
+}
+
+// .button {
+//   font-family: "Roboto", sans-serif;
+//   font-size: 12px;
+//   line-height: 12px;
+//   background: transparent;
+//   border: 2px solid;
+//   cursor: pointer;
+//   text-align: center;
+// }
+
+// .play-button {
+//   width: 100px;
+//   height: 100px;
+//   position: absolute;
+
+//   @media screen and (width >= 320px)and (width <= 1365px) {
+//     width: 72px;
+//     height: 72px;
+//   }
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// .phone,
+// .e-mail {
+//   color: #102654;
+//   font-size: 14px;
+//   line-height: 22px;
+
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     font-size: 14px;
+//     line-height: 20px;
+//   }
+// }
+
+// .logo {
+//   width: 130px;
+//   height: 26px;
+
+//   @media screen and (width >= 768px) and (width <= 1365px) {
+//     width: 110px;
+//     height: 22px;
+//   }
+
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     width: 100px;
+//     height: 20px;
+//   }
+// }
+
+// .visually-hidden {
+//   clip: rect(0 0 0 0);
+//   border: 0;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   position: absolute;
+//   overflow: hidden;
+// }
+
+// .close-minus {
+//   width: 40px;
+//   height: 40px;
+//   position: absolute;
+//   right: 0;
+//   top: 15px;
+
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }
+
+// .open-plus {
+//   width: 40px;
+//   height: 40px;
+//   position: absolute;
+//   right: 0;
+//   top: 15px;
+
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }
+
+// .buy__button--dark:hover {
+//   background: #ffffff;
+//   border: none;
+//   color: #103aae;
+// }
+
+// .buy__button--dark:focus {
+//   background: rgba(255, 255, 255, 0.8);
+//   border: #000000;
+//   color: #103aae;
+// }
+
+// .buy__button--dark:active {
+//   background: #ffffff;
+//   border: none;
+//   color: #102654;
+// }
+
+// .buy__button--dark:disabled {
+//   background: transparent;
+//   border: 2px solid rgba(255, 255, 255, 0.5);
+//   color: rgba(255, 255, 255, 0.5);
+// }
+
+// .buy__button--light:hover {
+//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+//   color: #ffffff;
+//   border: none;
+// }
+
+// .buy__button--light:focus {
+//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+//   color: #ffffff;
+//   border: 2px solid #000000;
+// }
+
+// .buy__button--light:active {
+//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+//   color: rgba(255, 255, 255, 0.5);
+//   border: none;
+// }
+
+// .buy__button--light:disabled {
+//   background: #ffffff;
+//   color: rgba(16, 38, 84, 0.3);
+//   border: 2px solid rgba(16, 38, 84, 0.3);
+// }
+
+// .vk-icon,
+// .ok-icon,
+// .rd-icon {
+//   width: 14px;
+//   height: 14px;
+//   fill: #030a1a;
+// }

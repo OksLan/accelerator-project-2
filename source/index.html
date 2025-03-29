@@ -11,19 +11,95 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest.json">
 
-
-
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
+    <h1 class="visually-hidden">
+      Путешествия LifeTour
+    </h1>
+
+    <!-- пример использования спрайта
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
 
-    <div data-test="header">header</div>
+    <div class="page-header" data-test="header">
+      <nav class="page-header__nav menu">
+        <a class="page-header__logo" href="#">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              type="image/svg+xml"
+              width="170"
+              height="36"
+              srcset="images/logo/logo-desktop.svg"
+            >
+            <source
+              media="(min-width: 768px)"
+              type="image/svg+xml"
+              width="82"
+              height="36"
+              srcset="images/logo/logo-tablet.svg"
+            >
+            <img
+              class="page-header__logo-pic"
+              src="images/logo/logo-mobile.svg"
+              width="32"
+              height="36"
+              alt="Логотип Lifetour"
+            >
+          </picture>
+        </a>
+
+        <!-- <ul class="user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <svg class="user-nav__icon user-nav__icon--account" width="16" height="16">
+                <use href="icons/stack.svg#account"></use>
+              </svg>
+              <span class="user-nav__link-text">Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <svg class="user-nav__icon user-nav__icon--basket" width="16" height="16">
+                <use href="icons/stack.svg#basket"></use>
+              </svg>
+              <span class="user-nav__link-text">Корзина</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__toggle user-nav__toggle--open" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <svg class="user-nav__icon" width="16" height="16">
+                <use href="icons/stack.svg#burger"></use>
+              </svg>
+            </button>
+          </li>
+        </ul> -->
+
+        <!-- <div class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </div> -->
+
+      </nav>
+    </div>
+
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
