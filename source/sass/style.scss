@@ -1,5 +1,11 @@
 @import "vendor/normalize";
+@import "common/mixins";
 @import "common/fonts";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+
+
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -66,9 +72,9 @@ img {
 //   }
 // }
 
-// a {
-//   text-decoration: none;
-// }
+a {
+  text-decoration: none;
+}
 
 // .phone,
 // .e-mail {
@@ -97,16 +103,16 @@ img {
 //   }
 // }
 
-// .visually-hidden {
-//   clip: rect(0 0 0 0);
-//   border: 0;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   padding: 0;
-//   position: absolute;
-//   overflow: hidden;
-// }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
 
 // .close-minus {
 //   width: 40px;
