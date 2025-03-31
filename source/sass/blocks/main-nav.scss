@@ -1,33 +1,15 @@
 .main-nav {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  display: none;
-
-  @media screen and (width >= 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    width: min-content;
-    flex-grow: 1;
-  }
-
-  @media screen and (width >= 1440px) {
-    flex-grow: 1;
-  }
 }
 
 .main-nav__list {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  z-index: 10;
-
-  @media screen and (width >= 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-nav__item {
@@ -42,5 +24,5 @@
   width: 100%;
   font-size: 16px;
   line-height: 16px;
-  padding: 15px 20px;
+  padding: 23px 15px;
 }
