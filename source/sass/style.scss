@@ -21,11 +21,11 @@ body {
 }
 
 .wrap {
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
   padding: 1px 0;
 
-  @media screen and (width >= 768px)and (width <= 1365px) {
+  @media screen and (width >= 768px)and (width <= 1439px) {
     width: 678px;
   }
 
@@ -45,6 +45,10 @@ body {
   @media screen and (width >= 320px) and (width <= 767px) {
     max-width: 290px;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
@@ -69,22 +73,6 @@ img {
 //   @media screen and (width >= 320px)and (width <= 1365px) {
 //     width: 72px;
 //     height: 72px;
-//   }
-// }
-
-a {
-  text-decoration: none;
-}
-
-// .phone,
-// .e-mail {
-//   color: #102654;
-//   font-size: 14px;
-//   line-height: 22px;
-
-//   @media screen and (width >= 320px) and (width <= 767px) {
-//     font-size: 14px;
-//     line-height: 20px;
 //   }
 // }
 
@@ -114,6 +102,25 @@ a {
   overflow: hidden;
 }
 
+.menu__toggle {
+  display: none;
+
+  @media screen and (width >= 768px) and (width <= 1439px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+    order: 1;
+  }
+}
+
 // .close-minus {
 //   width: 40px;
 //   height: 40px;
@@ -140,53 +147,6 @@ a {
 //   }
 // }
 
-// .buy__button--dark:hover {
-//   background: #ffffff;
-//   border: none;
-//   color: #103aae;
-// }
-
-// .buy__button--dark:focus {
-//   background: rgba(255, 255, 255, 0.8);
-//   border: #000000;
-//   color: #103aae;
-// }
-
-// .buy__button--dark:active {
-//   background: #ffffff;
-//   border: none;
-//   color: #102654;
-// }
-
-// .buy__button--dark:disabled {
-//   background: transparent;
-//   border: 2px solid rgba(255, 255, 255, 0.5);
-//   color: rgba(255, 255, 255, 0.5);
-// }
-
-// .buy__button--light:hover {
-//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-//   color: #ffffff;
-//   border: none;
-// }
-
-// .buy__button--light:focus {
-//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-//   color: #ffffff;
-//   border: 2px solid #000000;
-// }
-
-// .buy__button--light:active {
-//   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-//   color: rgba(255, 255, 255, 0.5);
-//   border: none;
-// }
-
-// .buy__button--light:disabled {
-//   background: #ffffff;
-//   color: rgba(16, 38, 84, 0.3);
-//   border: 2px solid rgba(16, 38, 84, 0.3);
-// }
 
 // .vk-icon,
 // .ok-icon,
@@ -194,4 +154,16 @@ a {
 //   width: 14px;
 //   height: 14px;
 //   fill: #030a1a;
+// }
+
+// .phone,
+// .e-mail {
+//   color: #102654;
+//   font-size: 14px;
+//   line-height: 22px;
+
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     font-size: 14px;
+//     line-height: 20px;
+//   }
 // }

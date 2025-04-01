@@ -27,6 +27,14 @@
 
     <div class="page-header" data-test="header">
       <nav class="page-header__nav menu">
+
+        <button class="menu__toggle menu__toggle--open" type="button">
+         <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__icon" width="26" height="26">
+            <use href="img/spritemap#menu"></use>
+          </svg>
+        </button>
+
         <a class="page-header__logo" href="#">
           <picture>
             <source
@@ -66,16 +74,10 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Контакты</a>
             </li>
-            <button class="main-nav__list-toggle main-nav__list-toggle--open" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__icon" width="26" height="26">
-                <use href="img/spritemap#menu"></use>
-              </svg>
-            </button>
           </ul>
         </div>
 
-        <a class="page-header-phone" href="tel:88000000000">8 800 000-00-00</a>
+        <a class="page-header__phone" href="tel:88000000000">8 800 000-00-00</a>
 
       </nav>
     </div>
