@@ -4,57 +4,36 @@
   position: relative;
 
   @media screen and (width >= 320px) and (width <= 1439px) {
-    width: 100%;
-    position: relative;
     display: none;
   }
 }
 
-// .main-nav--opened {
-//   @media screen and (width >= 320px) and (width <= 1439px) {
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-//     background: #0266c1;
-//     z-index: 100;
-//   }
-// }
-
-.main-nav__toggle {
-  display: none;
-
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    margin: 0;
-    display: block;
-    height: 26px;
-    width: 26px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    margin: 0;
-    display: block;
-    height: 26px;
-    width: 26px;
-    order: -1;
+.main-nav--opened {
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0266c1;
+    z-index: 100;
   }
 }
 
-// .main-nav__toggle--open {
-//   display: none;
+.main-nav__toggle--open {
+  display: none;
 
-//   @media screen and (width >= 320px) and (width <= 1439px) {
-//     background-image: url("/source/img/icons/menu.svg");
-//     display: block;
-//   }
-// }
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    background-image: url("/source/img/icons/menu.svg");
+    display: block;
+  }
+}
 
-// .main-nav__toggle--close {
-//   background-image: url("/source/img/icons/cross.svg");
-//   display: block;
-// }
+.main-nav__toggle--close {
+  background-image: url("/source/img/icons/cross.svg");
+  display: block;
+}
 
 .main-nav__list {
   width: 100%;
@@ -65,11 +44,11 @@
 
   @media screen and (width >= 320px) and (width <= 1439px) {
     position: absolute;
+    flex-direction: column;
     width: 320px;
-    margin: 0;
-    padding: 0;
     z-index: 10;
     background-color: #0266c1;
+    align-items: stretch;
   }
 }
 
@@ -77,7 +56,7 @@
   list-style: none;
 
   @media screen and (width >= 320px) and (width <= 1439px) {
-    border: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
   }
 }
 
@@ -90,4 +69,8 @@
   font-size: 16px;
   line-height: 16px;
   padding: 23px 15px;
+}
+
+.main-nav--opened .main-nav__link {
+  padding: 15px 15px;
 }

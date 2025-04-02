@@ -47,14 +47,6 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-}
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   border: 0;
@@ -64,6 +56,33 @@ img {
   padding: 0;
   position: absolute;
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.menu__toggle {
+  display: none;
+
+  @media screen and (width >= 768px) and (width <= 1439px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+    order: -1;
+  }
 }
 
 // .button {

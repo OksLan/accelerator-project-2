@@ -5,23 +5,19 @@
 
 
 /* развернуть/свернуть main-nav */
-// document.addEventListener("DOMContentLoaded", () => {
-//     const toggleButton = document.querySelector(".menu__toggle");
-//     const navList = document.querySelector(".main-nav");
-//     const icon = toggleButton.querySelector("svg use");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector(".menu__toggle");
+    const navList = document.querySelector(".main-nav");
+    const icon = toggleButton.querySelector("use");
 
-//     if (!toggleButton || !navList || !icon) {
-//         console.error("Ошибка: один из элементов не найден!");
-//         return;
-//     }
+    if (!toggleButton || !navList || !icon) return;
 
-//     toggleButton.addEventListener("click", () => {
-//         const isOpen = navList.classList.toggle("main-nav--opened");
+    toggleButton.addEventListener("click", () => {
+        const isOpen = navList.classList.toggle("main-nav--opened");
 
-//         toggleButton.classList.toggle("menu__toggle--open", isOpen);
-//         toggleButton.classList.toggle("menu__toggle--close", !isOpen);
+        // Меняем иконку в зависимости от состояния меню
+        icon.setAttribute("href", isOpen ? "img/spritemap#cross" : "img/spritemap#menu");
+    });
+});
 
-//         icon.setAttribute("href", isOpen ? "img/spritemap#cross" : "img/spritemap#menu");
-//     });
-// });
 
