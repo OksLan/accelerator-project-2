@@ -26,14 +26,7 @@
     </svg> -->
 
     <div class="page-header" data-test="header">
-      <nav class="page-header__nav menu">
-
-        <button class="menu__toggle menu__toggle--open" type="button">
-         <span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__icon" width="26" height="26">
-            <use href="img/spritemap#menu"></use>
-          </svg>
-        </button>
+      <nav class="page-header__nav">
 
         <a class="page-header__logo" href="#">
           <picture>
@@ -55,6 +48,14 @@
         </a>
 
         <div class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-nav__toggle-icon" width="26" height="26">
+              <use href="img/spritemap.svg#menu"></use>
+            </svg>
+          </button>
+          
+
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Туры</a>

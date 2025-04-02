@@ -10,16 +10,75 @@
   }
 }
 
+// .main-nav--opened {
+//   @media screen and (width >= 320px) and (width <= 1439px) {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     width: 100%;
+//     background: #0266c1;
+//     z-index: 100;
+//   }
+// }
+
+.main-nav__toggle {
+  display: none;
+
+  @media screen and (width >= 768px) and (width <= 1439px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    margin: 0;
+    display: block;
+    height: 26px;
+    width: 26px;
+    order: -1;
+  }
+}
+
+// .main-nav__toggle--open {
+//   display: none;
+
+//   @media screen and (width >= 320px) and (width <= 1439px) {
+//     background-image: url("/source/img/icons/menu.svg");
+//     display: block;
+//   }
+// }
+
+// .main-nav__toggle--close {
+//   background-image: url("/source/img/icons/cross.svg");
+//   display: block;
+// }
+
 .main-nav__list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    position: absolute;
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    background-color: #0266c1;
+  }
 }
 
 .main-nav__item {
   list-style: none;
+
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    border: 1px solid #ffffff;
+  }
 }
 
 .main-nav__link {

@@ -55,6 +55,17 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 // .button {
 //   font-family: "Roboto", sans-serif;
 //   font-size: 12px;
@@ -91,35 +102,7 @@ img {
 //   }
 // }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  position: absolute;
-  overflow: hidden;
-}
 
-.menu__toggle {
-  display: none;
-
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    margin: 0;
-    display: block;
-    height: 26px;
-    width: 26px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    margin: 0;
-    display: block;
-    height: 26px;
-    width: 26px;
-    order: 1;
-  }
-}
 
 // .close-minus {
 //   width: 40px;
