@@ -1,0 +1,199 @@
+.header {
+    background-color: #0266c1;
+    height: 126px;
+
+    @media screen and (width >= 768px) and (width <= 1439px) {
+        height: 82px;
+    }
+    
+      @media screen and (width >= 320px) and (width <= 767px) {
+        height: 100px;
+    }
+}
+
+.header-wrapper {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width >= 768px) and (width <= 1439px) {
+        height: 82px;
+    }
+    
+      @media screen and (width >= 320px) and (width <= 767px) {
+        height: 100px;
+    }
+}
+
+// toggle
+.header__toggle {
+  display: none;
+  
+  @media screen and (width >= 768px) and (width <= 1439px) {
+      position: relative;
+      margin: 0;
+      height: 26px;
+      width: 26px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  
+  @media screen and (width >= 320px) and (width <= 767px) {
+      position: relative;
+      margin: 0;
+      height: 26px;
+      width: 26px;
+      order: -1;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+}
+  
+.header__toggle--open {
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    display: block;
+    background-image: url("/source/img/icons/menu.svg");
+  }
+}
+  
+.header__toggle--close {
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    display: block;
+    background-image: url("/source/img/icons/cross.svg");
+  }
+}
+
+.header__logo {
+    padding: 10px 31px 10px 32px;
+  
+    @media screen and (width >= 768px) and (width <= 1439px) {
+      margin-left: 78px;
+      padding: 0;
+    }
+  
+    @media screen and (width >= 320px) and (width <= 767px) {
+      order: 2;
+      padding: 0;
+      margin-left: 122px;
+    }
+}
+  
+.header__nav {
+  display: flex;
+  position: relative;
+  
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    display: none;
+  }
+}
+  
+.header__nav--opened {
+    @media screen and (width >= 320px) and (width <= 1439px) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #0266c1;
+      z-index: 100;
+    }
+  }
+  
+// .header__toggle--open {
+//     display: none;
+  
+//   @media screen and (width >= 320px) and (width <= 1439px) {
+//     background-image: url("/source/img/icons/menu.svg");
+//     display: block;
+//   }
+// }
+  
+// .header__toggle--close {
+//   background-image: url("/source/img/icons/cross.svg");
+//   display: block;
+// }
+  
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  
+  @media screen and (width >= 320px) and (width <= 1439px) {
+    position: absolute;
+    flex-direction: column;
+    width: 320px;
+    z-index: 10;
+    background-color: #0266c1;
+    align-items: stretch;
+  }
+}
+  
+.header__nav-item a {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  position: relative;
+}
+  
+.header__nav--opened .header__nav-link {
+  padding: 15px 15px;
+}
+  
+.header__nav-item a::before {
+  content: "";
+  background-color: transparent;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+  
+.header__nav-item:hover a::before {
+  background-color: #ffffff;
+}
+  
+.header__nav-item a::after {
+  content: "";
+  border: 1px solid transparent;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: -10px;
+  padding: 10px;
+}
+  
+.header__nav-item:focus a::after {
+  border-color: #ffffff;
+}
+
+.header__phone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  justify-content: center;
+  
+  @media screen and (width >= 768px) and (width <= 1439px) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+  }
+  
+  @media screen and (width >= 320px) and (width <= 767px) {
+    font-size: 14px;
+    line-height: 14px;
+    order: 3;
+    margin-top: 14px;
+    margin-left: 168px;
+  }
+}

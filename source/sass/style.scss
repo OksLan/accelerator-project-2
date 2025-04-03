@@ -2,8 +2,7 @@
 @import "common/mixins";
 @import "common/fonts";
 
-@import "blocks/page-header";
-@import "blocks/main-nav";
+@import "blocks/header";
 
 
 
@@ -145,47 +144,6 @@ h7 {
   font-weight: 700;
   font-size: 14;
   line-height: 16;
-}
-
-/* иконка меню */
-
-.menu__toggle {
-  display: none;
-  
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    position: relative;
-    margin: 0;
-    height: 26px;
-    width: 26px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    position: relative;
-    margin: 0;
-    height: 26px;
-    width: 26px;
-    order: -1;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-}
-
-.menu__toggle--open {
-  @media screen and (width >= 320px) and (width <= 1439px) {
-    display: block;
-    background-image: url("/source/img/icons/menu.svg");
-  }
-}
-
-.menu__toggle--close {
-  @media screen and (width >= 320px) and (width <= 1439px) {
-    display: block;
-    background-image: url("/source/img/icons/cross.svg");
-  }
 }
 
 // .button {
