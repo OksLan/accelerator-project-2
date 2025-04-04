@@ -6,18 +6,20 @@
 
 /* развернуть/свернуть main-nav */
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.querySelector(".menu__toggle");
-    const navList = document.querySelector(".main-nav");
-    const icon = toggleButton.querySelector("use");
-
-    if (!toggleButton || !navList || !icon) return;
-
+    const toggleButton = document.querySelector(".header__toggle");
+    const toggleIcon = toggleButton.querySelector("use");
+    const nav = document.querySelector(".header__nav");
+  
+    let isOpen = false;
+  
     toggleButton.addEventListener("click", () => {
-        const isOpen = navList.classList.toggle("main-nav--opened");
-
-        // Меняем иконку в зависимости от состояния меню
-        icon.setAttribute("href", isOpen ? "img/spritemap#cross" : "img/spritemap#menu");
+      isOpen = !isOpen;
+  
+      // Переключаем отображение меню
+      nav.classList.toggle("header__nav--opened", isOpen);
+  
+      // Меняем иконку
+      toggleIcon.setAttribute("href", isOpen ? "img/spritemap.svg#cross" : "img/spritemap.svg#menu");
     });
-});
-
-
+  });
+  
