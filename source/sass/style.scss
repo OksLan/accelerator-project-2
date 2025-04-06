@@ -4,8 +4,6 @@
 
 @import "blocks/header";
 
-
-
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-optical-sizing: auto;
@@ -17,49 +15,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.wrap {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 1px 0;
-
-  @media screen and (width >= 768px)and (width <= 1439px) {
-    width: 678px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    width: 290px;
-  }
-}
-
-.section-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media screen and (width >= 768px)and (width <= 1365px) {
-    max-width: 678px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    max-width: 290px;
-  }
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  position: absolute;
-  overflow: hidden;
 }
 
 a {
@@ -151,6 +106,49 @@ h7 {
   line-height: 16;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1px 0;
+
+  @media screen and (width >= 768px)and (width <= 1439px) {
+    width: 678px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    width: 290px;
+  }
+}
+
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (width >= 768px)and (width <= 1365px) {
+    max-width: 678px;
+  }
+
+  @media screen and (width >= 320px) and (width <= 767px) {
+    max-width: 290px;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 // .button {
 //   font-family: "Roboto", sans-serif;
 //   font-size: 12px;
@@ -186,7 +184,6 @@ h7 {
 //     height: 20px;
 //   }
 // }
-
 
 
 // .close-minus {
