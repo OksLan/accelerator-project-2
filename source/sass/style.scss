@@ -111,19 +111,19 @@ ul {
   padding: 0;
 }
 
-.wrap {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 1px 0;
+// .wrap {
+//   width: 1200px;
+//   margin: 0 auto;
+//   padding: 1px 0;
 
-  @media screen and (width >= 768px)and (width <= 1439px) {
-    width: 678px;
-  }
+//   @media screen and (width >= 768px)and (width <= 1439px) {
+//     width: 678px;
+//   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    width: 290px;
-  }
-}
+//   @media screen and (width >= 320px) and (width <= 767px) {
+//     width: 290px;
+//   }
+// }
 
 .section-wrapper {
   max-width: 1200px;
