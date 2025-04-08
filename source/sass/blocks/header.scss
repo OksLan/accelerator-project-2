@@ -1,14 +1,5 @@
 .header {
   background-color: #0266c1;
-  height: 126px;
-
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    height: 82px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    height: 100px;
-  }
 }
 
 .header-wrapper {
@@ -17,15 +8,12 @@
   align-items: center;
   padding-top: 32px;
   position: relative;
+  padding: 20px 0;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    padding-top: 20px;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
-    padding: 15px 0;
+  @media screen and (width < 767px) {
     flex-direction: row;
-    position: relative;
+    padding: 15px 0;
+    display: flex;
   }
 }
 
@@ -33,7 +21,7 @@
 .header__toggle {
   display: none;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     position: relative;
     margin: 0;
     height: 22px;
@@ -43,38 +31,33 @@
     cursor: pointer;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    position: relative;
-    margin: 0;
+  @media screen and (width < 767px) {
     height: 22px;
     width: 22px;
     top: 0px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    align-self: flex-start;
+    background: none;
   }
 }
 
 .header__toggle--open {
-  @media screen and (width >= 320px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     display: block;
     background-image: url("/img/icons/menu.svg");
     width: 22px;
     height: 22px;
     background-repeat: no-repeat;
-    background-size: 22px 22px;
     background-size: contain;
   }
 }
 
 .header__toggle--close {
-  @media screen and (width >= 320px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     display: block;
     background-image: url("/img/icons/cross.svg");
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     background-repeat: no-repeat;
-    background-size: 18px 18px;
     background-size: contain;
   }
 }
@@ -83,16 +66,15 @@
 .header__logo {
   padding: 10px 31px 10px 32px;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     margin-left: 78px;
     padding: 0;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
+  @media screen and (width < 767px) {
     position: absolute;
     top: 15px;
     right: 0;
-    padding: 0;
   }
 }
 
@@ -101,13 +83,13 @@
   display: flex;
   position: relative;
 
-  @media screen and (width >= 320px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     display: none;
   }
 }
 
 .header__nav--opened {
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -117,14 +99,8 @@
     z-index: 100;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
+  @media screen and (width < 767px) {
     top: 100%;
-    width: 100%;
-    background: #0266c1;
-    z-index: 100;
   }
 }
 
@@ -147,19 +123,14 @@
 
   @media screen and (width < 767px) {
     width: 250px;
-    top: 45px;
     left: 7%;
   }
 }
 
 .header__nav-item {
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     width: 100%;
     border-bottom: 1px solid #ffffff;
-    padding: 5px 0;
-  }
-
-  @media screen and (width >= 320px) and (width <= 767px) {
     padding: 5px 0;
   }
 }
@@ -170,7 +141,7 @@
   line-height: 16px;
   position: relative;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,27 +151,22 @@
     line-height: 14px;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 25px;
+  @media screen and (width < 767px) {
     font-size: 12px;
     line-height: 12px;
   }
 }
 
-.header__nav-text {
-    padding: 3px 5px;
-    border: 1px solid transparent;
+.header__nav-link span {
+  padding: 3px 5px;
+  border: 1px solid transparent;
 }
 
-.header__nav-link:hover .header__nav-text {
+.header__nav-link:hover span {
   border-bottom: 1px solid #ffffff;
 }
 
-.header__nav-link:focus .header__nav-text {
+.header__nav-link:focus span {
   border-color: #ffffff;
 }
 
@@ -210,6 +176,7 @@
 
 .header__nav-link:disabled {
   color: #999999;
+  pointer-events: none;
 }
 
 //телефон
@@ -224,17 +191,16 @@
   line-height: 18px;
   justify-content: center;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
+  @media screen and (width < 1439px) {
     font-size: 16px;
     line-height: 16px;
     text-align: center;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
+  @media screen and (width < 767px) {
     font-size: 14px;
     line-height: 14px;
-    position: absolute;
-    top: 70px;
-    right: 0px;
+    margin-top: 65px;
+    left: 0;
   }
 }
