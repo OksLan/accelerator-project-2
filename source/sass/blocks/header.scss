@@ -6,14 +6,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
   position: relative;
-  padding: 20px 0;
+  padding: 35px 120px;
+
+  @media screen and (width < 1439px)  {
+    padding: 20px 45px;
+  }
 
   @media screen and (width < 767px) {
     flex-direction: row;
-    padding: 15px 0;
-    display: flex;
+    padding: 15px 15px;
   }
 }
 
@@ -44,8 +46,8 @@
   @media screen and (width < 1439px) {
     display: block;
     background-image: url("/img/icons/menu.svg");
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -55,8 +57,8 @@
   @media screen and (width < 1439px) {
     display: block;
     background-image: url("/img/icons/cross.svg");
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -74,7 +76,8 @@
   @media screen and (width < 767px) {
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 15px;
+    padding: 0;
   }
 }
 
@@ -97,6 +100,7 @@
     width: 100%;
     background: #0266c1;
     z-index: 100;
+    left: 0;
   }
 
   @media screen and (width < 767px) {
@@ -113,25 +117,18 @@
   @media screen and (width < 1439px) {
     position: absolute;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     z-index: 10;
     background-color: #0266c1;
-    gap: 0px;
-    top: 1px;
-    left: 28%;
+    gap: 25px;
+    top: -1px;
+    align-items: flex-start;
+    padding: 27px 0 64px 42px;
   }
 
   @media screen and (width < 767px) {
-    width: 250px;
-    left: 7%;
-  }
-}
-
-.header__nav-item {
-  @media screen and (width < 1439px) {
-    width: 100%;
-    border-bottom: 1px solid #ffffff;
-    padding: 5px 0;
+    gap: 18px;
+    padding: 12px 0 47px 12px;
   }
 }
 
@@ -142,24 +139,21 @@
   position: relative;
 
   @media screen and (width < 1439px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 25px;
-    font-size: 14px;
-    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   @media screen and (width < 767px) {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
 .header__nav-link span {
-  padding: 3px 5px;
   border: 1px solid transparent;
+  padding: 3px 5px;
 }
 
 .header__nav-link:hover span {
@@ -200,7 +194,7 @@
   @media screen and (width < 767px) {
     font-size: 14px;
     line-height: 14px;
-    margin-top: 65px;
+    margin-top: 56px;
     left: 0;
   }
 }
