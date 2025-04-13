@@ -28,83 +28,83 @@ img {
 
 h2 {
   font-weight: 800;
-  font-size: 77;
-  line-height: 77;
+  font-size: 77px;
+  line-height: 77px;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    font-size: 56;
-    line-height: 56;
+  @media screen and (width < 1439px) {
+    font-size: 56px;
+    line-height: 56px;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    font-size: 26;
-    line-height: 26;
+  @media screen and (width < 767px) {
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
 h3 {
   font-weight: 800;
-  font-size: 35;
-  line-height: 35;
+  font-size: 35px;
+  line-height: 35px;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    font-size: 25;
-    line-height: 25;
+  @media screen and (width < 1439px) {
+    font-size: 25px;
+    line-height: 25px;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    font-size: 22;
-    line-height: 22;
+  @media screen and (width < 767px) {
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
 h4 {
   font-weight: 700;
-  font-size: 24;
-  line-height: 28;
+  font-size: 24px;
+  line-height: 28px;
 
-    @media screen and (width >= 320px) and (width <= 767px) {
-    font-size: 20;
-    line-height: 24;
+    @media screen and (width < 767px) {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 h5 {
   font-weight: 700;
-  font-size: 21;
-  line-height: 21;
+  font-size: 21px;
+  line-height: 21px;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    font-size: 18;
-    line-height: 18;
+  @media screen and (width < 1439px) {
+    font-size: 18px;
+    line-height: 18px;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    font-size: 16;
-    line-height: 16;
+  @media screen and (width < 767px) {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 h6 {
   font-weight: 600;
-  font-size: 18;
-  line-height: 18;
+  font-size: 18px;
+  line-height: 18px;
 
-  @media screen and (width >= 768px) and (width <= 1439px) {
-    font-size: 16;
-    line-height: 16;
+  @media screen and (width < 1439px) {
+    font-size: 16px;
+    line-height: 16px;
   }
 
-  @media screen and (width >= 320px) and (width <= 767px) {
-    font-size: 14;
-    line-height: 14;
+  @media screen and (width < 767px) {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
 h7 {
   font-weight: 700;
-  font-size: 14;
-  line-height: 16;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 ul {
@@ -112,7 +112,7 @@ ul {
   padding: 0;
 }
 
-.wrap {
+.div-wrap {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1px 0;
