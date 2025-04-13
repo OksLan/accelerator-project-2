@@ -92,8 +92,9 @@
     </div>
 
     <div class="hero slider" data-test="hero">
-      <h2 class="visually-hidden">Промо</h2>
+      <h2 class="visually-hidden">Промо-блок</h2>
         <div class="slides-wrapper">
+
           <div class="slide slide--one slide--active">
             <div class="slide__img-container">
               <picture>
@@ -103,8 +104,8 @@
                   height="800"
                   type="image/webp"
                   srcset="
-                    img/hero/slide_1-desktop@1x.webp 1x,
-                    img/hero/slide_1-desktop@2x.webp 2x
+                    img/slider/slide_1-desktop@1x.webp 1x,
+                    img/slider/slide_1-desktop@2x.webp 2x
                   "
                 >
                 <source
@@ -113,8 +114,8 @@
                   height="1034"
                   type="image/webp"
                   srcset="
-                    img/hero/slide_1-tablet@1x.webp 1x,
-                    img/hero/slide_1-tablet@2x.webp 2x
+                    img/slider/slide_1-tablet@1x.webp 1x,
+                    img/slider/slide_1-tablet@2x.webp 2x
                   "
                 >
                 <source
@@ -122,8 +123,8 @@
                   height="568"
                   type="image/webp"
                   srcset="
-                    img/hero/slide_1-mobile@1x.webp 1x,
-                    img/hero/slide_1-mobile@2x.webp 2x
+                    img/slider/slide_1-mobile@1x.webp 1x,
+                    img/slider/slide_1-mobile@2x.webp 2x
                   "
                 >
 
@@ -133,8 +134,8 @@
                   width="1440"
                   height="800"
                   srcset="
-                    img/hero/slide_1-desktop@1x.png 1x,
-                    img/hero/slide_1-desktop@2x.png 2x
+                    img/slider/slide_1-desktop@1x.png 1x,
+                    img/slider/slide_1-desktop@2x.png 2x
                   "
                 >
                 <source
@@ -143,37 +144,29 @@
                   width="768"
                   height="1034"
                   srcset="
-                    img/hero/slide_1-tablet@1x.png 1x,
-                    img/hero/slide_1-tablet@2x.png 2x
+                    img/slider/slide_1-tablet@1x.png 1x,
+                    img/slider/slide_1-tablet@2x.png 2x
                   "
                 >
                 <img
-                  class="hero__image"
-                  src="img/hero/bckgrnd-mobile@1x.png"
-                  srcset="img/hero/slide_1-mobile@2x.png 2x"
+                  class="slide__image"
+                  src="img/slider/slide_1-mobile@1x.png"
+                  srcset="img/slider/slide_1-mobile@2x.png 2x"
                   width="320"
                   height="568"
                   alt="Кавказ"
                 >
               </picture>
             </div>
-            <div class="slide__text-container">
-              <p class="slide__badge badge">Новинка!</p>
-              <span class="slide__heading">Декаф Флэт Уайт</span>
-              <p class="slide__desc">
-                Свежесваренный кофе без кофеина из&nbsp;Эфиопии
-                с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то, что нужно
-                для расслабления после тяжёлого рабочего дня
-              </p>
-              <div class="slide__buy-wrapper">
-                <div class="slide__price-container">
-                  <span class="price price--old">295₽</span>
-                  <span class="price price--new">225₽</span>
-                </div>
-                <button class="slide__button button" type="button">
-                  Заказать
-                </button>
-              </div>
+
+            <div class="slide__content-container">
+              <h2 class="slide__title">Захватывающие вершины Кавказа</h2>
+              <h3 class="slide__text">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</h3>
+              <button class="slide__see-more button" type="button">
+                Смотреть тур
+              </button>
+              <span class="slide__duration">6&nbsp;дней/5 ночей</span>
+              <span class="slide__level">Высокая сложность</span>
             </div>
           </div>
 
@@ -341,15 +334,6 @@
             </div>
           </div> -->
         </div>
-
-        <!-- <div
-          class="slider-button-prev"
-          aria-label="Посмотреть предыдущий слайд"
-        ></div>
-        <div
-          class="slider-button-next"
-          aria-label="Посмотреть следующий слайд"
-        ></div> -->
 
         <!-- <div class="slider__pagination">
           <span class="slider__pagination-bullet slider__pagination-bullet--active"></span>

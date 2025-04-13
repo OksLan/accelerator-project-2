@@ -3,7 +3,7 @@
 @import "common/fonts";
 
 @import "blocks/header";
-@import "blocks/hero";
+@import "blocks/slider";
 
 body {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -28,12 +28,12 @@ img {
 
 h2 {
   font-weight: 800;
-  font-size: 55;
-  line-height: 55;
+  font-size: 77;
+  line-height: 77;
 
   @media screen and (width >= 768px) and (width <= 1439px) {
-    font-size: 40;
-    line-height: 40;
+    font-size: 56;
+    line-height: 56;
   }
 
   @media screen and (width >= 320px) and (width <= 767px) {
@@ -112,23 +112,10 @@ ul {
   padding: 0;
 }
 
-// .wrap {
-//   width: 1200px;
-//   margin: 0 auto;
-//   padding: 1px 0;
-
-//   @media screen and (width >= 768px)and (width <= 1439px) {
-//     width: 678px;
-//   }
-
-//   @media screen and (width >= 320px) and (width <= 767px) {
-//     width: 290px;
-//   }
-// }
-
-.section-wrapper {
+.wrap {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1px 0;
 
   @media screen and (width >= 768px)and (width <= 1365px) {
     max-width: 678px;
