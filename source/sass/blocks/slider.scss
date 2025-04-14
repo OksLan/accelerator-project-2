@@ -23,6 +23,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .slide__img-container {
@@ -97,4 +98,34 @@
 
 .slide__info-text {
   padding: 0;
+}
+
+.slider__pagination {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  bottom: 90px;
+  margin-left: 1220px;
+  gap: 20px;
+}
+
+.slider__pagination-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  z-index: 10;
+
+  &--active {
+    background-color: #ffffff;
+  }
+}
+
+.slide__photocards {
+  position: absolute;
+  top: 187px;
+  left: 910px;
 }

@@ -161,8 +161,8 @@
             <div class="slide__content-container">
               <h2 class="slide__title">Захватывающие<br>вершины Кавказа</h2>
               <p class="slide__text">
-                В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через 
-                потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину 
+                В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через
+                потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину
                 горы Чегет.
               </p>
               <a class="slide__button button" href="#">
@@ -254,7 +254,7 @@
               <h2 class="slide__title">Невероятная<br>природа Камчатки</h2>
               <p class="slide__text">
                 Незабываемое приключение, во&nbsp;время которого вы&nbsp;
-                отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых 
+                отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых
                 нетронутых уголков дикой природы в&nbsp;мире.
               </p>
               <a class="slide__button button" href="#">
@@ -276,6 +276,59 @@
                 </div>
 
               </div>
+            </div>
+            <div class="slide__photocards">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  width="410"
+                  height="459"
+                  type="image/webp"
+                  srcset="
+                    img/slider/photocards-desktop@1x.webp 1x,
+                    img/slider/photocards-desktop@2x.webp 2x
+                  "
+                >
+                <source
+                  media="(min-width: 768px)"
+                  width="442"
+                  height="365"
+                  type="image/webp"
+                  srcset="
+                    img/slider/photocards-tablet@1x.webp 1x,
+                    img/slider/photocards-tablet@2x.webp 2x
+                  "
+                >
+
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="410"
+                  height="459"
+                  srcset="
+                    img/slider/photocards-desktop@1x.png 1x,
+                    img/slider/photocards-desktop@2x.png 2x
+                  "
+                >
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="442"
+                  height="365"
+                  srcset="
+                    img/slider/photocards-tablet@1x.png 1x,
+                    img/slider/photocards-tablet@2x.png 2x
+                  "
+                >
+                <img
+                  class="slide__image"
+                  src="img/slider/photocards-desktop@1x.png"
+                  srcset="img/slider/photocards-desktop@2x.png 2x"
+                  width="410"
+                  height="459"
+                  alt="Фото на polaroid с горами, озером и альпинистом в жёлтой куртке"
+                >
+              </picture>
             </div>
           </div>
 
@@ -345,8 +398,8 @@
             <div class="slide__content-container">
               <h2 class="slide__title">Магические пейзажи<br>Алтайского Края</h2>
               <p class="slide__text">
-                Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение 
-                с&nbsp;посещением магических<br>и&nbsp;захватывающих дух ландшафтов 
+                Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение
+                с&nbsp;посещением магических<br>и&nbsp;захватывающих дух ландшафтов
                 Алтайских гор.
               </p>
               <a class="slide__button button" href="#">
@@ -370,16 +423,13 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="slider__pagination">
-            <span class="slider__pagination-bullet slider__pagination-bullet--active"></span>
-            <span class="slider__pagination-bullet"></span>
-            <span class="slider__pagination-bullet"></span>
-          </div>
-
-      </div>
-
-
+        <div class="slider__pagination">
+          <span class="slider__pagination-bullet slider__pagination-bullet--active"></span>
+          <span class="slider__pagination-bullet"></span>
+          <span class="slider__pagination-bullet"></span>
+        </div>
     </div>
 
     <!--<div data-test="tours">tours</div>
@@ -390,6 +440,7 @@
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div> -->
+
     <script type="module" src="js/main.js"></script>
   </body>
 

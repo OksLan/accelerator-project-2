@@ -3,6 +3,10 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+import { initSlider } from "./slider.js";
+
+  initSlider();
+
 
 /* развернуть/свернуть main-nav */
 document.addEventListener("DOMContentLoaded", () => {
