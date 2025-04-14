@@ -137,69 +137,16 @@ ul {
   overflow: hidden;
 }
 
-// .button {
-//   font-family: "Roboto", sans-serif;
-//   font-size: 12px;
-//   line-height: 12px;
-//   background: transparent;
-//   border: 2px solid;
-//   cursor: pointer;
-//   text-align: center;
-// }
-
-// .play-button {
-//   width: 100px;
-//   height: 100px;
-//   position: absolute;
-
-//   @media screen and (width >= 320px)and (width <= 1365px) {
-//     width: 72px;
-//     height: 72px;
-//   }
-// }
-
-// .logo {
-//   width: 130px;
-//   height: 26px;
-
-//   @media screen and (width >= 768px) and (width <= 1365px) {
-//     width: 110px;
-//     height: 22px;
-//   }
-
-//   @media screen and (width >= 320px) and (width <= 767px) {
-//     width: 100px;
-//     height: 20px;
-//   }
-// }
-
-
-// .close-minus {
-//   width: 40px;
-//   height: 40px;
-//   position: absolute;
-//   right: 0;
-//   top: 15px;
-
-//   @media screen and (width >= 320px) and (width <= 767px) {
-//     width: 30px;
-//     height: 30px;
-//   }
-// }
-
-// .open-plus {
-//   width: 40px;
-//   height: 40px;
-//   position: absolute;
-//   right: 0;
-//   top: 15px;
-
-//   @media screen and (width >= 320px) and (width <= 767px) {
-//     width: 30px;
-//     height: 30px;
-//   }
-// }
-
+.button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  background: #0266c1;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 35px;
+}
 
 // .vk-icon,
 // .ok-icon,
