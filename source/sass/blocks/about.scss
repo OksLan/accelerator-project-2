@@ -1,0 +1,45 @@
+.about-wrapper {
+    padding-top: 100px;
+    padding-bottom: 178px;
+    // background-color:antiquewhite;
+    padding: 100px 0 178px 540px;
+}
+.about__content {
+    display: flex;
+    flex-direction: column;
+}
+.about__title {
+    margin-bottom: 57px;
+
+    &::after {
+      position: absolute;
+      font-weight: 800;
+      font-size: 55px;
+      line-height: 55px;
+      content: "O нас";
+      color: #2d383f;
+      opacity: 0.03;
+      bottom: 580px;
+      left: 665px;
+    }
+}
+
+.about {
+  & h5 {
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.about__history {
+    margin-bottom: 25px;
+}
+
+.about__history,
+.about__mission {
+    max-width: 585px;
+}

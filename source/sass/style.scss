@@ -4,6 +4,7 @@
 
 @import "blocks/header";
 @import "blocks/slider";
+@import "blocks/about";
 
 body {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -112,7 +113,7 @@ ul {
   padding: 0;
 }
 
-.div-wrap {
+.div-wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1px 0;
