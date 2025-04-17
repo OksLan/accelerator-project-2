@@ -1,15 +1,33 @@
 .about-wrapper {
-    padding-top: 100px;
-    padding-bottom: 178px;
-    // background-color:antiquewhite;
-    padding: 100px 0 178px 540px;
+    padding: 95px 0 178px;
+
+    @media screen and (width < 1439px)  {
+      padding: 40px 0;
+    }
+  
+    @media screen and (width < 767px) {
+    }
 }
 .about__content {
     display: flex;
     flex-direction: column;
+    position: relative;
+    padding-left: 45%;
+    z-index: 10;
+
+    @media screen and (width < 1439px)  {
+      padding-left: 60%;
+    }
 }
 .about__title {
+    margin-top: 45px;
     margin-bottom: 57px;
+    position: relative;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 46px;
+      margin-top: 20px;
+    }
 
     &::after {
       position: absolute;
@@ -19,19 +37,53 @@
       content: "O нас";
       color: #2d383f;
       opacity: 0.03;
-      bottom: 580px;
-      left: 665px;
+      bottom: 20px;
+      left: 0;
+
+      @media screen and (width < 1439px)  {
+        font-size: 40px;
+        line-height: 40px;
+        bottom: 0;
+      }
     }
 }
 
 .about {
   & h5 {
     margin-bottom: 20px;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 15px;
+    }
   }
 
   & p {
     font-size: 14px;
     line-height: 22px;
+
+    @media screen and (width < 1439px)  {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 660px;
+    height: 498px;
+    background-image: url("/img/about/bckgnd-desktop@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 1027px;
+    z-index: 1;
+
+    @media screen and (width < 1439px)  {
+      width: 542px;
+      height: 350px;
+      background-image: url("/img/about/bckgnd-tablet@2x.webp");
+      top: 1290px;
+    }
   }
 }
 
@@ -42,4 +94,8 @@
 .about__history,
 .about__mission {
     max-width: 585px;
+
+  @media screen and (width < 1439px)  {
+    max-width: 270px;
+  }
 }
