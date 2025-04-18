@@ -10,7 +10,7 @@ export function initSlider() {
     const updatePagination = () => {
       paginationBullets.forEach((bullet, index) => {
         bullet.classList.toggle(
-          "slider__pagination-bullet--active",
+          "slider__pagination-bullet--selected",
           index === slideIndex
         );
       });
