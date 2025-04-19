@@ -1,0 +1,65 @@
+.form {
+  height: 760px;
+  width: 100%;
+  background-image: url("/img/form/bckgrnd_desktop@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  background-color: #0266c1;
+
+  @media screen and (width < 1439px)  {
+    height: 680px;
+    background-image: url("/img/form/bckgrnd_tablet@2x.webp");
+  }
+
+  @media screen and (width < 767px) {
+    height: 638px;
+    background-image: url("/img/form/bckgrnd_mobile@2x.webp");
+  }
+}
+
+.form-wrapper {
+  padding: 0 40px;
+
+  @media screen and (width < 1439px)  {
+    padding: 0 204px;
+  }
+
+  @media screen and (width < 767px) {
+    padding: 0 31px;
+  }
+}
+
+.form h3 {
+  padding-top: 292px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media screen and (width < 1439px)  {
+    padding-top: 183px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (width < 767px) {
+    padding-top: 174px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.form p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media screen and (width < 1439px)  {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (width < 767px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+}

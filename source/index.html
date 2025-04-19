@@ -465,9 +465,33 @@
 
     <!-- <div data-test="reviews">reviews</div>
     <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
+    <div data-test="gallery">gallery</div> -->
+
+    <div class="form" data-test="form">
+      <div class="form-wrapper">
+        <div class="form-title">
+          <h3>Остались вопросы?</h3>
+          <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+        </div>
+        <form class="form__boxes" action="https://echo.htmlacademy.ru" name="free-form" method="post">
+          <div class="form__box-phone">
+            <label class="visually-hidden" for="email">Введите номер телефона</label>
+            <input class="form__input" type="text" name="user-phone" id="phone" placeholder="Телефон">
+            <span class="form__error-message message-empty">Поле не может быть пустым</span>
+            <span class="form__error-message wrong-symbols">Только цифры</span>
+          </div>
+          <div class="form__box-email">
+            <label class="visually-hidden" for="phone">Введите адрес вашей электронной почты</label>
+            <input class="form__input" type="text" name="user-email" id="email" placeholder="Email">
+            <span class="form__error-message message-empty">Поле не может быть пустым</span>
+            <span class="form__error-message wrong-symbols">Только латинские буквы, цифры и специальные символы</span>
+          </div>
+          <button class="form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div data-test="footer">footer</div> -->
 
     <script type="module" src="js/main.js"></script>
   </body>
