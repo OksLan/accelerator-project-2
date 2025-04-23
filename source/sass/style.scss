@@ -120,7 +120,7 @@ ul {
   padding: 1px 0;
 
 
-  @media screen and (width >= 768px)and (width <= 1365px) {
+  @media screen and (width >= 768px)and (width <= 1439px) {
     max-width: 678px;
     margin: 0 45px;
   }
@@ -145,13 +145,34 @@ ul {
 .button {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
-  background: #0266c1;
+  background-color: #0266c1;
   color: #ffffff;
   border: none;
   cursor: pointer;
   text-align: center;
   font-size: 16px;
   line-height: 16px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    color: #1c3374;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    color: #ffffff;
+  }
 }
 
 

@@ -97,6 +97,22 @@
   padding: 17.5px 30px;
   width: 360px;
 
+  &:hover {
+    border-color: #0266c1;
+  }
+
+  &:focus {
+    border-color: #2d383f;
+  }
+
+  &:disabled {
+    border-color: #999999;
+
+    &::placeholder {
+      color:#999999;
+    }
+  }
+
   @media screen and (width < 767px) {
     width: 258px;
     padding: 17.5px 15px;
@@ -104,7 +120,11 @@
 }
 
 .form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   left: 30px;
+  color: #2d383f;
 }
 
 .form__error-message {
