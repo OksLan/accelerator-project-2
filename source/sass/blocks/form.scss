@@ -72,6 +72,14 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (width < 1439px)  {
+    gap: 11px;
+  }
+
+  @media screen and (width < 767px)  {
+    gap: 11px;
+  }
 }
 
 .form__box-phone,
@@ -85,14 +93,42 @@
   background-color: #ffffff;
   color: #2d383f;
   border: 1px solid #0266c11a;
-  padding: 17.5px 25px;
+  border-radius: 1px;
+  padding: 17.5px 30px;
   width: 360px;
+
+  @media screen and (width < 767px) {
+    width: 258px;
+    padding: 17.5px 15px;
+  }
+}
+
+.form__input::placeholder {
+  left: 30px;
 }
 
 .form__error-message {
   display: none;
+  color: #ff121f;
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  left: 0;
+  top: 125%;
+
+  @media screen and (width < 1439px)  {
+    margin-bottom: 25px;
+  }
 }
 
 .form__button {
   padding: 20px 25px;
+
+  @media screen and (width < 1439px)  {
+    padding: 20px 135px;
+  }
+
+  @media screen and (width < 767px)  {
+    padding: 20px 84px;
+  }
 }
