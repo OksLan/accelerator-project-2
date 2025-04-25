@@ -1,5 +1,9 @@
+.about {
+  background-color: beige;
+}
+
 .about-wrapper {
-    padding: 95px 0 178px;
+    padding-bottom: 178px;
 
     @media screen and (width < 1439px)  {
       padding: 40px 0;
@@ -9,6 +13,7 @@
       padding: 20px 0;
     }
 }
+
 .about__content {
     display: flex;
     flex-direction: column;
@@ -27,6 +32,8 @@
 }
 
 .about {
+  position: relative;
+
   & h3 {
     margin-top: 45px;
     margin-bottom: 57px;
@@ -98,7 +105,7 @@
     background-image: url("/img/about/bckgnd-desktop@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 1027px;
+    top: 0;
     z-index: 1;
 
     @media screen and (width < 1439px)  {

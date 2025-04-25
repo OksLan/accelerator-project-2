@@ -1,0 +1,50 @@
+.tours {
+    height: 813px;
+
+    @media screen and (width < 1439px)  {
+        height: 637px;
+      }
+    
+      @media screen and (width < 767px) {
+        height: 595px;
+      }
+
+    & h3 {
+        margin-bottom: 53px;
+
+        @media screen and (width < 1439px)  {
+            margin-bottom: 35px;
+          }
+        
+          @media screen and (width < 767px) {
+            margin-bottom: 42px;
+          }
+    }
+}
+
+.tours-wrapper {
+    padding: 100px 0;
+}
+
+.swiper.tours__swiper {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 416px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+.tours__card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 224px 20px 30px;
+    background-color: #80b3e0;
+}
+
+.tours__card-link {
+    
+}

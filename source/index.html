@@ -113,14 +113,12 @@
                   </svg>
                   <span class="slide__info-text">6&nbsp;дней/5 ночей</span>
                 </div>
-
                 <div class="slide__info-item">
                   <svg class="slide__info-icon" width="12" height="12" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-level"></use>
                   </svg>
                   <span class="slide__info-text">Высокая сложность</span>
                 </div>
-
               </div>
             </div>
           </div>
@@ -193,8 +191,29 @@
         </div>
     </div>
 
-    <!-- <div data-test="tours">tours</div>
-    <div data-test="training">training</div> -->
+    <div class="tours" data-test="tours">
+      <div class="div-wrapper">
+        <div class="tours-wrapper">
+          <h3>Ближайшие туры</h3>
+
+          <div class="tours__buttons swiper__buttons">
+            <div class="swiper-button-prev arrow"></div>
+            <div class="swiper-button-next arrow"></div>
+          </div>
+
+          <div class="swiper tours__swiper">
+            <div class="swiper-wrapper tours__list"></div>
+          </div>
+
+          <a class="tours__button button" href="#">
+            Показать все туры
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div data-test="training">training</div> -->
 
     <div class="about" data-test="about">
       <div class="div-wrapper">
@@ -253,6 +272,49 @@
     </div>
 
     <!-- <div data-test="footer">footer</div> -->
+
+    <template id="card">
+      <article class="tours__card card">
+        <div class="card__info">
+          <div class="card__location">
+            <svg class="card__location-icon" width="12" height="12" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-pin"></use>
+            </svg>
+            <span class="card__location-text"></span>
+          </div>
+          <div class="card__days">
+            <svg class="card__days-icon" width="12" height="12" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-sun"></use>
+            </svg>
+            <span class="card__days-text"></span>
+          </div>
+          <div class="card__nights">
+            <svg class="card__nights-icon" width="12" height="12" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-moon"></use>
+            </svg>
+            <span class="card__nights-text"></span>
+          </div>
+
+        <a class="card__link card__link--title" href="#">
+          <h4 class="card__title"></h4>
+        </a>
+
+        <div class="card__details">
+          <div class="card__stars">
+            <svg class="card__stars-icon" width="12" height="12" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-stars"></use>
+            </svg>
+            <span class="card__stars-text"></span>
+          </div>
+          <div class="card__dates">
+            <span class="card__dates-text"></span>
+          </div>
+          <div class="card__group">
+            <span class="card__group-text"></span>
+          </div>
+
+      </article>
+    </template>
 
     <script type="module" src="js/main.js"></script>
   </body>
