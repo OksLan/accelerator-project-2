@@ -8,7 +8,7 @@
     @media screen and (width < 1439px)  {
       padding: 40px 0;
     }
-  
+
     @media screen and (width < 767px) {
       padding: 20px 0;
     }
@@ -112,14 +112,14 @@
       width: 542px;
       height: 350px;
       background-image: url("/img/about/bckgnd-tablet@2x.webp");
-      top: 1290px;
+      top: 167px;
     }
 
     @media screen and (width < 767px)  {
       width: 100%;
       height: 400px;
       background-image: url("/img/about/bckgnd-mobile@2x.webp");
-      top: 700px;
+      top: 0;
     }
   }
 }

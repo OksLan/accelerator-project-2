@@ -5,8 +5,14 @@
   flex-direction: column;
   padding: 224px 20px 30px;
   background-color: #0266c1;
-  min-width: 380px;
+  width: 380px;
   height: 416px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%),
+  image-set(
+    url("/img/cards/elbrus@1x.png") type("image/png") 1x, url("/img/cards/elbrus@2x.png") type("image/png") 2x,
+    url("/img/cards/elbrus@1x.webp") type("image/webp") 1x, url("/img/cards/elbrus@2x.webp") type("image/webp") 2x,);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card__link {
@@ -34,20 +40,17 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 12px;
-
-  & span {
-    padding: 0;
-    margin-bottom: 4px;
-  }
 }
 
-.tours__link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  background: transparent;
-  color: #2d383f;
+.card__location {
+  display: flex;
+  background-color: #0266c1;
+  padding: 8px 12px;
+  align-items: center;
+}
+
+.card__location-icon {
+  margin-right: 6px;
 }
 
 .card__duration {
@@ -57,14 +60,31 @@
 
 .card__days,
 .card__nights {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .card__days-icon,
 .card__nights-icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 12px;
-    margin: auto;
+  margin-right: 12px;
+}
+
+.card__stars,
+.card__dates,
+.card__group {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card__stars-text,
+.card__dates-text,
+.card__dates-text {
+  margin-bottom: 6px;
+}
+
+.card__dates-dates,
+.card__group-number {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
 }
