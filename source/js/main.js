@@ -2,6 +2,7 @@
 import Swiper from "swiper";
 // // import {Navigation, Pagination} from "swiper/modules";
 // // import 'swiper/css';
+import { cards, showCards } from "./cards.js"
 
 
 /* ПРОМО слайдер */
@@ -243,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // скрытие попапов и ошибки при вводе
+  // скрытие попапов и ошибки при вводе
     input.addEventListener("input", () => {
       input.classList.remove("error");
 
@@ -255,3 +256,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+showCards(cards);

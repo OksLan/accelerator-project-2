@@ -203,8 +203,8 @@
 
           <div class="swiper tours__swiper">
             <div class="swiper-wrapper tours__list">
-              <article class="tours__card card">
 
+              <article class="tours__card card">
                 <div class="card__info">
                   <div class="card__location">
                     <svg class="card__location-icon" width="16" height="16" aria-hidden="true" focusable="false">
@@ -327,27 +327,28 @@
 
     <!-- <div data-test="footer">footer</div> -->
 
-    <!-- <template id="card">
-      <article class="tours__card card">
-
+    <template id="card">
+      <article class="tours__list-item card">
         <div class="card__info">
           <div class="card__location">
-            <svg class="card__location-icon" width="12" height="12" aria-hidden="true" focusable="false">
+            <svg class="card__location-icon" width="16" height="16" aria-hidden="true" focusable="false">
               <use href="/__spritemap#sprite-pin"></use>
             </svg>
             <span class="card__location-text"></span>
           </div>
-          <div class="card__days">
-            <svg class="card__days-icon" width="12" height="12" aria-hidden="true" focusable="false">
-              <use href="/__spritemap#sprite-sun"></use>
-            </svg>
-            <span class="card__days-text"></span>
-          </div>
-          <div class="card__nights">
-            <svg class="card__nights-icon" width="12" height="12" aria-hidden="true" focusable="false">
-              <use href="/__spritemap#sprite-moon"></use>
-            </svg>
-            <span class="card__nights-text"></span>
+          <div class="card__duration">
+            <div class="card__days">
+              <svg class="card__days-icon" width="20" height="20" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-sun"></use>
+              </svg>
+              <span class="card__days-text"></span>
+            </div>
+            <div class="card__nights">
+              <svg class="card__nights-icon" width="16" height="16" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-moon"></use>
+              </svg>
+              <span class="card__nights-text"></span>
+            </div>
           </div>
         </div>
 
@@ -357,20 +358,22 @@
 
         <div class="card__details">
           <div class="card__stars">
-            <svg class="card__stars-icon" width="12" height="12" aria-hidden="true" focusable="false">
-              <use href="/__spritemap#sprite-stars"></use>
-            </svg>
             <span class="card__stars-text">Сложность:</span>
+            <svg class="card__stars-icon" width="84" height="16" aria-hidden="true" focusable="false">
+              <use href="/__spritemap#sprite-4-stars"></use>
+            </svg>
           </div>
           <div class="card__dates">
             <span class="card__dates-text">Даты набора:</span>
+            <span class="card__dates-dates"></span>
           </div>
           <div class="card__group">
-            <span class="card__group-text">Группа:</span>
+            <span class="card__dates-text">Группа:</span>
+            <span class="card__group-number"></span>
           </div>
         </div>
       </article>
-    </template> -->
+    </template>
 
     <script type="module" src="js/main.js"></script>
   </body>
