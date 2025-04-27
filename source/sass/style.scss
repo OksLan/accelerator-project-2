@@ -61,6 +61,25 @@ h3 {
     font-size: 22px;
     line-height: 22px;
   }
+
+  &:after {
+    position: absolute;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: #2d383f;
+    opacity: 0.03;
+
+    @media screen and (width < 1439px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @media screen and (width < 767px) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
 }
 
 h4 {

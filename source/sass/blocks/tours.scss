@@ -1,29 +1,46 @@
 .tours {
     height: 813px;
+    background-color: azure;
+    position: relative;
 
     @media screen and (width < 1439px)  {
-        height: 637px;
-      }
+      height: 637px;
+    }
 
-      @media screen and (width < 767px) {
-        height: 595px;
-      }
+    @media screen and (width < 767px) {
+      height: 595px;
+    }
 
     & h3 {
       margin-bottom: 53px;
 
       @media screen and (width < 1439px)  {
-        margin-bottom: 35px;
-        }
+        margin-bottom: 25px;
+      }
 
-      @media screen and (width < 767px) {
-        margin-bottom: 42px;
-    }
+      &:after {
+        content: "Ближайшие туры";
+        left: 122px;
+        top: 83px;
+
+        @media screen and (width < 1439px)  {
+          left: 45px;
+          top: 28px;
+        }
+      }
   }
 }
 
 .tours-wrapper {
     padding: 100px 0;
+
+    @media screen and (width < 1439px)  {
+      padding: 40px 0;
+    }
+
+    @media screen and (width < 767px) {
+      padding: 36px 0;
+    }
 }
 
 .swiper.tours__swiper {
@@ -34,11 +51,16 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 53px;
+
+    @media screen and (width < 1439px) {
+      margin-bottom: 25px;
+    }
 }
 
 .tours__link {
   display: flex;
   justify-content: center;
+  padding: 10px;
 
   & a {
   font-weight: 700;
@@ -47,10 +69,19 @@
   text-transform: uppercase;
   background: transparent;
   color: #2d383f;
+
+  @media screen and (width < 767px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
   }
 
   &:hover a {
     color: #80b3e0;
+
+    & .tours__link-icon {
+      color: #80b3e0;
+    }
   }
 
   &:focus a {
@@ -64,9 +95,70 @@
   &:disabled a {
     color: #999999;
   }
+}
 
-  & svg {
-    fill: #ffffff;
+.tours__link-icon {
+    color: #2d383f;
     margin-left: 12px;
+}
+
+.tours__buttons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  right: 120px;
+  top: 102px;
+  cursor: pointer;
+
+  @media screen and (width < 1439px)  {
+    right: 45px;
+    top: 36px;
+  }
+
+  @media screen and (width < 767px) {
+    right: 120px;
+    top: 102px;
   }
 }
+
+.tours__button {
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 1px solid #1c3374;
+
+    & .tours__button-icon {
+      color:#1c3374;
+    }
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+
+    & .tours__button-icon {
+      color:#1c3374;
+    }
+  }
+
+  &:active {
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    border: 1px solid #999999;
+  }
+}
+
+.tours__button-icon {
+  color: #ffffff;
+}
+
+

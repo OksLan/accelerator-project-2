@@ -197,8 +197,16 @@
           <h3>Ближайшие туры</h3>
 
           <div class="tours__buttons swiper__buttons">
-            <div class="swiper-button-prev arrow"></div>
-            <div class="swiper-button-next arrow"></div>
+            <button class="tours__button tours__button--prev swiper-button-prev" aria-label="Посмотреть предыдущий тур" disabled>
+              <svg class="tours__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-prev"></use>
+              </svg>
+            </button>
+            <button class="tours__button tours__button--next swiper-button-next" aria-label="Посмотреть следующий тур">
+              <svg class="tours__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                <use href="/__spritemap#sprite-next"></use>
+              </svg>
+            </button>
           </div>
 
           <div class="swiper tours__swiper">
@@ -257,7 +265,7 @@
             <a href="#">
               Показать все туры
             </a>
-            <svg class="tours__link-icon" width="9" height="14" aria-hidden="true" focusable="false">
+            <svg class="tours__link-icon" width="9" height="14" fill="currentColor" aria-hidden="true" focusable="false">
               <use href="/__spritemap#sprite-right"></use>
             </svg>
           </div>
@@ -265,7 +273,6 @@
         </div>
       </div>
     </div>
-
 
     <!-- <div data-test="training">training</div> -->
 
@@ -327,8 +334,37 @@
 
     <!-- <div data-test="footer">footer</div> -->
 
+   <!--темплейт карточки каталога Ближайшие туры -->
     <template id="card">
       <article class="tours__list-item card">
+
+        <a class="card__link card__link--image" href="#">
+          <picture>
+            <source
+              class="card__image-webp"
+              type="image/webp"
+              width="380"
+              height="416"
+              srcset="img/cards/, img/cards/"
+            >
+            <source
+              class="card__image-png"
+              type="image/png"
+              width="380"
+              height="416"
+              srcset="img/cards/, img/cards/"
+            >
+            <img
+              class="card__image"
+              src="img/cards/"
+              srcset="img/cards/"
+              width="380"
+              height="416"
+              alt="Кваказ"
+            >
+          </picture>
+        </a>
+
         <div class="card__info">
           <div class="card__location">
             <svg class="card__location-icon" width="16" height="16" aria-hidden="true" focusable="false">

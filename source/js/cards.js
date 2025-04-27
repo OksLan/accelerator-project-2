@@ -58,7 +58,7 @@ let addCard = (card) => {
   ).srcset = `img/cards/${card.foto}.webp, img/cards/${card.foto_2x}.webp`;
   cardElement.querySelector(
     ".card__image-png"
-  ).srcset = `images/products/${card.foto}.png, images/products/${card.foto_2x}.png`;
+  ).srcset = `img/cards/${card.foto}.png, img/cards/${card.foto_2x}.png`;
   cardElement.querySelector(".card__image").src += `${card.foto}.png`;
   cardElement.querySelector(".card__image").srcset += `${card.foto_2x}.png`;
   cardElement.querySelector(".card__title").textContent = card.title;
