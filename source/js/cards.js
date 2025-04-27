@@ -6,7 +6,7 @@ const cards = [
     location: "Кавказ",
     days: "4 дня",
     nights: "3 ночи",
-    stars: "",
+    stars: 4,
     dates: "12.06–19.06",
     group: "до 15 чел.",
   },
@@ -65,7 +65,8 @@ let addCard = (card) => {
   cardElement.querySelector(".card__location").textContent = card.location;
   cardElement.querySelector(".card__days").textContent = card.days;
   cardElement.querySelector(".card__nights").textContent = card.nights;
-  cardElement.querySelector(".card__stars").textContent = `${card.price}.svg`;
+
+  cardElement.querySelector(".card__stars").textContent = `stars${card.stars}.svg`;
   cardElement.querySelector(".card__dates").textContent = card.dates;
   cardElement.querySelector(".card__group").textContent = card.group;
 

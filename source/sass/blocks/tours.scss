@@ -79,9 +79,9 @@
   &:hover a {
     color: #80b3e0;
 
-    & .tours__link-icon {
-      color: #80b3e0;
-    }
+    // & .tours__link-icon {
+    //   fill: #80b3e0;
+    // }
   }
 
   &:focus a {
@@ -98,7 +98,6 @@
 }
 
 .tours__link-icon {
-    color: #2d383f;
     margin-left: 12px;
 }
 
@@ -157,8 +156,11 @@
   }
 }
 
-.tours__button-icon {
-  color: #ffffff;
+.tours__link-icon {
+  stroke: #1c3374;
+  stroke-width: 2px;
 }
 
-
+.tours__link:hover .tours__link-icon {
+  stroke: #80b3e0;
+}
