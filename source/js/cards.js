@@ -10,6 +10,7 @@ const cards = [
     dates: "12.06–19.06",
     group: "до 15 чел.",
   },
+  
   // {
   //   foto: "belukha@1x",
   //   foto_2x: "belukha@2x",
