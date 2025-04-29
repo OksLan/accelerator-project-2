@@ -10,40 +10,40 @@ const cards = [
     dates: "12.06–19.06",
     group: "до 15 чел.",
   },
-  
-  // {
-  //   foto: "belukha@1x",
-  //   foto_2x: "belukha@2x",
-  //   title: "Путь к подножию<br>Белухи",
-  //   location: "Алтай",
-  //   days: "14 дней",
-  //   nights: "13 ночей",
-  //   stars: "",
-  //   dates: "14.06–23.06",
-  //   group: "до 25 чел.",
-  // },
-  // {
-  //   foto: "fisht@1x",
-  //   foto_2x: "fisht@2x",
-  //   title: "Через Фишт<br>к Чёрному морю <br>и обратно",
-  //   location: "Адыгея",
-  //   days: "7 дней",
-  //   nights: "6 ночей",
-  //   stars: "",
-  //   dates: "15.07–19.07",
-  //   group: "до 22 чел.",
-  // },
-  // {
-  //   foto: "",
-  //   foto_2x: "",
-  //   title: "Восхождение<br>Манарага",
-  //   location: "Урал",
-  //   days: "9 дней",
-  //   nights: "10 ночей",
-  //   stars: "",
-  //   dates: "12.07–19.07",
-  //   group: "до 7 чел.",
-  // },
+
+  {
+    foto: "belukha@1x",
+    foto_2x: "belukha@2x",
+    title: "Путь к подножию<br>Белухи",
+    location: "Алтай",
+    days: "14 дней",
+    nights: "13 ночей",
+    stars: "3",
+    dates: "14.06–23.06",
+    group: "до 25 чел.",
+  },
+  {
+    foto: "fisht@1x",
+    foto_2x: "fisht@2x",
+    title: "Через Фишт<br>к Чёрному морю <br>и обратно",
+    location: "Адыгея",
+    days: "7 дней",
+    nights: "6 ночей",
+    stars: "4",
+    dates: "15.07–19.07",
+    group: "до 22 чел.",
+  },
+  {
+    foto: "",
+    foto_2x: "",
+    title: "Восхождение<br>Манарага",
+    location: "Урал",
+    days: "9 дней",
+    nights: "10 ночей",
+    stars: "5",
+    dates: "12.07–19.07",
+    group: "до 7 чел.",
+  },
 ];
 export { cards };
 
@@ -67,7 +67,7 @@ let addCard = (card) => {
   cardElement.querySelector(".card__days").textContent = card.days;
   cardElement.querySelector(".card__nights").textContent = card.nights;
 
-  cardElement.querySelector(".card__stars").textContent = `stars${card.stars}.svg`;
+  cardElement.querySelector(".card__stars").textContent = `stars-${card.stars}.svg`;
   cardElement.querySelector(".card__dates").textContent = card.dates;
   cardElement.querySelector(".card__group").textContent = card.group;
 
