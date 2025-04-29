@@ -4,6 +4,9 @@ import Swiper from "swiper";
 import 'swiper/css';
 import { cards, showCards } from "./cards.js"
 
+const catalog = document.querySelector(".tours__list");
+const cardTemplate = document.querySelector("#card");
+
 
 /* ПРОМО слайдер */
 import { initSlider } from "./slider.js";
