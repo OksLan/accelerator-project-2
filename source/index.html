@@ -340,7 +340,7 @@
 
       <article class="tours__list-item card">
 
-        <a class="card__link card__link--image" href="#">
+        <!-- <a class="card__link card__link--image" href="#">
           <picture>
             <source
               media="(min-width: 1439px)"
@@ -359,12 +359,12 @@
               srcset="img/cards/, img/cards/"
             >
             <source
-            media="(min-width: 767px)"
-            class="card__image-webp"
-            type="image/webp"
-            width="330"
-            height="416"
-            srcset="img/cards/, img/cards/"
+              media="(min-width: 767px)"
+              class="card__image-webp"
+              type="image/webp"
+              width="330"
+              height="416"
+              srcset="img/cards/, img/cards/"
             >
             <source
               media="(min-width: 767px)"
@@ -383,6 +383,56 @@
               alt=""
             >
           </picture>
+        </a> -->
+
+        <a class="card__link" href="#">
+          <div class="card__image-wrapper">
+            <picture>
+              <source
+                media="(min-width: 1439px)"
+                class="card__image-webp"
+                type="image/webp"
+                width="380"
+                height="416"
+                data-srcset="img/cards/[[id]]-desktop@1x.webp 1x, img/cards/[[id]]-desktop@2x.webp 2x"
+              >
+              <source
+                media="(min-width: 1439px)"
+                class="card__image-png"
+                type="image/png"
+                width="380"
+                height="416"
+                data-srcset="img/cards/[[id]]-desktop@1x.png 1x, img/cards/[[id]]-desktop@2x.png 2x"
+              >
+              <source
+                media="(min-width: 767px)"
+                class="card__image-webp"
+                type="image/webp"
+                width="330"
+                height="416"
+                data-srcset="img/cards/[[id]]-tablet@1x.webp 1x, img/cards/[[id]]-tablet@2x.webp 2x"
+              >
+              <source
+                media="(min-width: 767px)"
+                class="card__image-png"
+                type="image/png"
+                width="330"
+                height="416"
+                data-srcset="img/cards/[[id]]-tablet@1x.png 1x, img/cards/[[id]]-tablet@2x.png 2x"
+              >
+              <img
+                class="card__image"
+                data-src="img/cards/[[id]]-mobile@1x.png"
+                data-srcset="img/cards/[[id]]-mobile@1x.png 1x, img/cards/[[id]]-mobile@2x.png 2x"
+                width="290"
+                height="416"
+                alt=""
+              >
+            </picture>
+
+            <div class="card__gradient"></div>
+
+          </div>
         </a>
 
         <div class="card__data">

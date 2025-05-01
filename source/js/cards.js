@@ -34,8 +34,8 @@ const cards = [
     group: "до 22 чел.",
   },
   {
-    foto: "",
-    foto_2x: "",
+    foto: "manaraga@1x",
+    foto_2x: "manaraga@2x",
     title: "Восхождение<br>Манарага",
     location: "Урал",
     days: "9 дней",
@@ -54,25 +54,39 @@ let addCard = (card) => {
   const cardElement = cardTemplate
     .querySelector(".tours__list-item")
     .cloneNode(true);
-  cardElement.querySelector(
-    ".card__image-webp"
-  ).srcset = `img/cards/${card.foto}.webp, img/cards/${card.foto_2x}.webp`;
-  cardElement.querySelector(
-    ".card__image-png"
-  ).srcset = `img/cards/${card.foto}.png, img/cards/${card.foto_2x}.png`;
-  cardElement.querySelector(".card__image").src += `${card.foto}.png`;
-  cardElement.querySelector(".card__image").srcset += `${card.foto_2x}.png`;
-  cardElement.querySelector(".card__title").textContent = card.title;
-  cardElement.querySelector(".card__location").textContent = card.location;
-  cardElement.querySelector(".card__days").textContent = card.days;
-  cardElement.querySelector(".card__nights").textContent = card.nights;
 
-  cardElement.querySelector(".card__stars").textContent = `stars-${card.stars}.svg`;
-  cardElement.querySelector(".card__dates").textContent = card.dates;
-  cardElement.querySelector(".card__group").textContent = card.group;
+  // Изображения
+  cardElement.querySelector(".card__image-webp").srcset = `img/cards/${card.foto}.webp, img/cards/${card.foto_2x}.webp`;
+  cardElement.querySelector(".card__image-png").srcset = `img/cards/${card.foto}.png, img/cards/${card.foto_2x}.png`;
+  cardElement.querySelector(".card__image").src = `img/cards/${card.foto}.png`;
+  cardElement.querySelector(".card__image").srcset = `img/cards/${card.foto_2x}.png`;
+
+  // Заголовок с HTML-разметкой
+  cardElement.querySelector(".card__title").innerHTML = card.title;
+
+  // Локация
+  cardElement.querySelector(".card__location-text").textContent = card.location;
+
+  // Продолжительность
+  cardElement.querySelector(".card__days-text").textContent = card.days;
+  cardElement.querySelector(".card__nights-text").textContent = card.nights;
+
+  // Сложность (звезды)
+  const starsIcon = cardElement.querySelector(".card__stars-icon");
+  starsIcon.innerHTML = ""; // очищаем
+  const starsUse = document.createElementNS("http://www.w3.org/2000/svg", "use");
+  starsUse.setAttribute("href", `/__spritemap#sprite-stars-${card.stars}`);
+  starsIcon.appendChild(starsUse);
+
+  // Даты
+  cardElement.querySelector(".card__dates-dates").textContent = card.dates;
+
+  // Группа
+  cardElement.querySelector(".card__group-number").textContent = card.group;
 
   catalog.append(cardElement);
 };
+
 
 export function showCards(cards) {
   for (const card of cards) {
