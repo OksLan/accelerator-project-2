@@ -9,7 +9,6 @@ const cards = [
     dates: "12.06–19.06",
     group: "до 15 чел.",
   },
-
   {
     foto: "belukha",
     title: "Путь к подножию<br>Белухи",
@@ -50,8 +49,9 @@ let addCard = (card) => {
   const cardElement = cardTemplate
     .querySelector(".tours__list-item")
     .cloneNode(true);
+  cardElement.classList.add("swiper-slide");
 
-  // картинка
+  // картинка-фон
   const sources = cardElement.querySelectorAll('source');
   sources.forEach(source => {
     const originalSrcset = source.getAttribute('data-srcset');
@@ -68,6 +68,10 @@ let addCard = (card) => {
     const rawSrcset = img.dataset.srcset;
     img.src = rawSrc.replace('[[id]]', card.foto);
     img.srcset = rawSrcset.replaceAll('[[id]]', card.foto);
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = card.title;
+    img.alt = tempDiv.textContent.trim();
   }
 
   // location

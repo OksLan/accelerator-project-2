@@ -1,18 +1,14 @@
-// // https://swiperjs.com/get-started#installation
 import Swiper from "swiper";
-// // import {Navigation, Pagination} from "swiper/modules";
+import {Navigation, Pagination} from "swiper/modules";
 import 'swiper/css';
+import 'swiper/css/navigation';
+
 import { cards, showCards } from "./cards.js"
-
-const catalog = document.querySelector(".tours__list");
-const cardTemplate = document.querySelector("#card");
-
 
 /* ПРОМО слайдер */
 import { initSlider } from "./slider.js";
 
   initSlider();
-
 
 /* развернуть/свернуть main-nav */
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,155 +30,42 @@ document.addEventListener("DOMContentLoaded", () => {
   }));
 });
 
-// /* TOURS свайпер */
-// const swiperTours = new Swiper('.tours__swiper', {
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 500,
+/* TOURS */
+const catalog = document.querySelector(".tours__list");
+const cardTemplate = document.querySelector("#card");
 
-//   breakpoints: {
-//     1439: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//     767: {
-//       slidesPerView: 2,
-//       spaceBetween: 18,
-//     },
-//     320: {
-//       slidesPerView: 1,
-//     },
-//   },
+showCards(cards);
 
-//     // Navigation arrows
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-//   enabled: true,
-//   clickable: true,
-// },
-// });
+/* TOURS свайпер */
+const swiperTours = new Swiper('.tours__swiper', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  loop: true,
+  speed: 500,
 
-// /* TRAINING свайпер */
-// const swiperTraining = new Swiper('.training__swiper', {
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 500,
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
 
-//   breakpoints: {
-//     1439: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//     },
-//     767: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     320: {
-//       slidesPerView: 1,
-//     },
-//   },
+    // Navigation arrows
+  navigation: {
+  nextEl: '.tours__button--next',
+  prevEl: '.tours__button--prev',
+  enabled: true,
+  clickable: true,
+},
+});
 
-//     // Navigation arrows
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-//   enabled: true,
-//   clickable: true,
-// },
-// });
-
-// /* REVIEWS свайпер */
-// const swiperReviews = new Swiper('.reviews__swiper', {
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 500,
-
-//   breakpoints: {
-//     1439: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//     },
-//     767: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     320: {
-//       slidesPerView: 1,
-//     },
-//   },
-
-//     // Navigation arrows
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-//   enabled: true,
-//   clickable: true,
-// },
-// });
-
-// /* ADVANTAGES свайпер */
-// const swiperAdv = new Swiper('.adv__swiper', {
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 500,
-
-//   breakpoints: {
-//     1439: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//     },
-//     767: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     320: {
-//       slidesPerView: 1,
-//     },
-//   },
-
-//     // Navigation arrows
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-//   enabled: true,
-//   clickable: true,
-// },
-// });
-
-// /* GALLERY свайпер */
-// const swiperGallery= new Swiper('.gallery__swiper', {
-//   modules: [Navigation],
-//   direction: 'horizontal',
-//   loop: true,
-//   speed: 500,
-
-//   breakpoints: {
-//     1439: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//     },
-//     767: {
-//       slidesPerView: 2,
-//       spaceBetween: 40,
-//     },
-//     320: {
-//       slidesPerView: 1,
-//     },
-//   },
-
-//     // Navigation arrows
-//   navigation: {
-//   nextEl: '.swiper-button-next',
-//   prevEl: '.swiper-button-prev',
-//   enabled: true,
-//   clickable: true,
-// },
-// });
 
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {
@@ -259,6 +142,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-showCards(cards);

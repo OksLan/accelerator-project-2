@@ -87,7 +87,6 @@
           </div>
 
           <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
-        </nav>
       </div>
     </div>
 
@@ -191,18 +190,18 @@
         </div>
     </div>
 
-    <div class="tours" data-test="tours">
+    <div class="tours swiper" data-test="tours">
       <div class="div-wrapper">
         <div class="tours-wrapper">
           <h3>Ближайшие туры</h3>
 
           <div class="tours__buttons swiper__buttons">
-            <button class="tours__button tours__button--prev swiper-button-prev" aria-label="Посмотреть предыдущий тур" disabled>
+            <button class="tours__button tours__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
               <svg class="tours__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-prev"></use>
               </svg>
             </button>
-            <button class="tours__button tours__button--next swiper-button-next" aria-label="Посмотреть следующий тур">
+            <button class="tours__button tours__button--next" aria-label="Посмотреть следующий тур">
               <svg class="tours__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-next"></use>
               </svg>
@@ -211,54 +210,6 @@
 
           <div class="swiper tours__swiper">
             <div class="swiper-wrapper tours__list">
-
-              <!-- <article class="tours__card card">
-                <div class="card__box">
-                  <div class="card__info">
-                    <div class="card__location">
-                      <svg class="card__location-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                        <use href="/__spritemap#sprite-pin"></use>
-                      </svg>
-                      <span class="card__location-text">Кавказ</span>
-                    </div>
-                    <div class="card__duration">
-                      <div class="card__days">
-                        <svg class="card__days-icon" width="20" height="20" aria-hidden="true" focusable="false">
-                          <use href="/__spritemap#sprite-sun"></use>
-                        </svg>
-                        <span class="card__days-text">4 дня</span>
-                      </div>
-                      <div class="card__nights">
-                        <svg class="card__nights-icon" width="16" height="16" aria-hidden="true" focusable="false">
-                          <use href="/__spritemap#sprite-moon"></use>
-                        </svg>
-                        <span class="card__nights-text">3 ночи</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a class="card__link card__link--title" href="#">
-                    <h4 class="card__title">Путешествие<br>вокруг Эльбруса</h4>
-                  </a>
-
-                  <div class="card__details">
-                    <div class="card__stars">
-                      <span class="card__stars-text">Сложность:</span>
-                      <svg class="card__stars-icon" width="84" height="16" aria-hidden="true" focusable="false">
-                        <use href="/__spritemap#sprite-4-stars"></use>
-                      </svg>
-                    </div>
-                    <div class="card__dates">
-                      <span class="card__dates-text">Даты набора:</span>
-                      <span class="card__dates-dates">12.06–19.06</span>
-                    </div>
-                    <div class="card__group">
-                      <span class="card__dates-text">Группа:</span>
-                      <span class="card__group-number">до 15 чел.</span>
-                    </div>
-                  </div>
-                </div>
-              </article> -->
             </div>
           </div>
 
@@ -337,54 +288,7 @@
 
    <!--темплейт карточки каталога Ближайшие туры -->
     <template id="card">
-
-      <article class="tours__list-item card">
-
-        <!-- <a class="card__link card__link--image" href="#">
-          <picture>
-            <source
-              media="(min-width: 1439px)"
-              class="card__image-webp"
-              type="image/webp"
-              width="380"
-              height="416"
-              srcset="img/cards/, img/cards/"
-            >
-            <source
-              media="(min-width: 1439px)"
-              class="card__image-png"
-              type="image/png"
-              width="380"
-              height="416"
-              srcset="img/cards/, img/cards/"
-            >
-            <source
-              media="(min-width: 767px)"
-              class="card__image-webp"
-              type="image/webp"
-              width="330"
-              height="416"
-              srcset="img/cards/, img/cards/"
-            >
-            <source
-              media="(min-width: 767px)"
-              class="card__image-png"
-              type="image/png"
-              width="330"
-              height="416"
-              srcset="img/cards/, img/cards/"
-            >
-            <img
-              class="card__image"
-              src="img/cards/"
-              srcset="img/cards/"
-              width="290"
-              height="416"
-              alt=""
-            >
-          </picture>
-        </a> -->
-
+      <article class="tours__list-item card swiper-slide">
         <a class="card__link" href="#">
           <div class="card__image-wrapper">
             <picture>
@@ -429,14 +333,10 @@
                 alt=""
               >
             </picture>
-
             <div class="card__gradient"></div>
-
           </div>
         </a>
-
         <div class="card__data">
-
           <div class="card__info">
             <div class="card__location">
               <svg class="card__location-icon" width="12" height="15" aria-hidden="true" focusable="false">
@@ -460,11 +360,9 @@
               </div>
             </div>
           </div>
-
           <a class="card__link card__link--title" href="#">
             <h4 class="card__title"></h4>
           </a>
-
           <div class="card__details">
             <div class="card__stars">
               <span class="card__stars-text">Сложность:</span>
@@ -480,10 +378,8 @@
               <span class="card__group-number"></span>
             </div>
           </div>
-
         </div>
       </article>
-
     </template>
 
     <script type="module" src="js/main.js"></script>
