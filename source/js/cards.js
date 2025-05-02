@@ -70,15 +70,15 @@ let addCard = (card) => {
     img.srcset = rawSrcset.replaceAll('[[id]]', card.foto);
   }
 
-  // title
-  cardElement.querySelector(".card__title").innerHTML = card.title;
-
   // location
   cardElement.querySelector(".card__location-text").textContent = card.location;
 
   // duration
   cardElement.querySelector(".card__days-text").textContent = card.days;
   cardElement.querySelector(".card__nights-text").textContent = card.nights;
+
+  // title
+  cardElement.querySelector(".card__title").innerHTML = card.title;
 
   // stars
   const starsIcon = cardElement.querySelector(".card__stars-icon");
