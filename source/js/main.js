@@ -40,7 +40,6 @@ showCards(cards);
 const swiperTours = new Swiper('.tours__swiper', {
   modules: [Navigation],
   direction: 'horizontal',
-  loop: true,
   speed: 500,
 
   breakpoints: {
@@ -65,7 +64,6 @@ const swiperTours = new Swiper('.tours__swiper', {
   clickable: true,
 },
 });
-
 
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {

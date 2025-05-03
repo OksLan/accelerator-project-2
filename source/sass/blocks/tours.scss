@@ -59,6 +59,10 @@
 
 .tours__list {
   gap: 30px;
+
+  @media screen and (width < 1439px)  {
+    gap: 18px;
+  }
 }
 
 .tours__link {
@@ -120,8 +124,7 @@
   }
 
   @media screen and (width < 767px) {
-    right: 120px;
-    top: 102px;
+    display: none;
   }
 }
 
