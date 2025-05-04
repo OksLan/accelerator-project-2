@@ -65,6 +65,7 @@ const swiperTours = new Swiper('.tours__swiper', {
 },
 });
 
+
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form__boxes');
