@@ -11,6 +11,16 @@
     @media screen and (width < 767px) {
       width: 290px;
     }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #999999;
+    bottom: 77px;
+    left: 20px;
+  }
 }
 
 .card__gradient {

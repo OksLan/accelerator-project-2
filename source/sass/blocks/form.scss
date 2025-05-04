@@ -1,20 +1,35 @@
 .form {
   height: 760px;
   width: 100%;
-  background-image: url("/img/form/bckgrnd_desktop@2x.webp");
+  background-image:
+  image-set(
+    url("/img/form/form-desktop@1x.png") type("image/png") 1x,
+    url("/img/form/form-desktop@2x.png") type("image/png") 2x,
+    url("/img/form/form-desktop@1x.webp") type("image/webp") 1x,
+    url("/img/form/form-desktop@2x.webp") type("image/webp") 2x,);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   background-color: #0266c1;
+  background-position: bottom left;
 
   @media screen and (width < 1439px)  {
     height: 680px;
-    background-image: url("/img/form/bckgrnd_tablet@2x.webp");
+    background-image:
+    image-set(
+      url("/img/form/form-tablet@1x.png") type("image/png") 1x,
+      url("/img/form/form-tablet@2x.png") type("image/png") 2x,
+      url("/img/form/form-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/form/form-tablet@2x.webp") type("image/webp") 2x,);
   }
 
   @media screen and (width < 767px) {
     height: 638px;
-    background-image: url("/img/form/bckgrnd_mobile@2x.webp");
+    background-image:    image-set(
+      url("/img/form/form-mobile@1x.png") type("image/png") 1x,
+      url("/img/form/form-mobile@2x.png") type("image/png") 2x,
+      url("/img/form/form-mobile@1x.webp") type("image/webp") 1x,
+      url("/img/form/form-mobile@2x.webp") type("image/webp") 2x,);
   }
 }
 
@@ -146,7 +161,7 @@
 .form__error-message {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 37%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;

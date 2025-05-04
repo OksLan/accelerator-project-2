@@ -8,6 +8,7 @@
 @import "blocks/card";
 @import "blocks/about";
 @import "blocks/form";
+@import "blocks/contacts";
 
 
 body {
@@ -201,6 +202,12 @@ ul {
   }
 }
 
+.phone,
+.e-mail {
+  color: #2d383f;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 // .vk-icon,
 // .ok-icon,
@@ -210,11 +217,6 @@ ul {
 //   fill: #030a1a;
 // }
 
-// .phone,
-// .e-mail {
-//   color: #102654;
-//   font-size: 14px;
-//   line-height: 22px;
 
 //   @media screen and (width >= 320px) and (width <= 767px) {
 //     font-size: 14px;
