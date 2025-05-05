@@ -48,15 +48,16 @@
 .contacts__info {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  border-collapse: separate;
+  border-spacing: 0 20px;
 
     & h6 {
     margin-bottom: 8px;
     }
 }
 
-.contacts__address p {
-  margin-bottom: 0;
+.contacts__icon svg {
+  margin-right: 30px;
 }
 
 .contacts__map {
@@ -70,5 +71,27 @@
   height: 324px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 49px;
+  margin-top: 39px;
+
+  @media screen and (width < 1439px)  {
+    background-image:
+    image-set(
+      url("/img/map/map-tablet@1x.png") type("image/png") 1x,
+      url("/img/map/map-tablet@2x.png") type("image/png") 2x,
+      url("/img/map/map-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/map/map-tablet@2x.webp") type("image/webp") 2x,);
+    width: 768px;
+    height: 340px;
+  }
+
+  @media screen and (width < 767px) {
+    background-image:
+    image-set(
+      url("/img/map/map-mobile@1x.png") type("image/png") 1x,
+      url("/img/map/map-mobile@2x.png") type("image/png") 2x,
+      url("/img/map/map-mobile@1x.webp") type("image/webp") 1x,
+      url("/img/map/map-mobile@2x.webp") type("image/webp") 2x,);
+    width: 320px;
+    height: 343px;
+  }
 }

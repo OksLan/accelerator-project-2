@@ -107,7 +107,11 @@
               </a>
               <div class="slide__info">
                 <div class="slide__info-item">
-                  <svg class="slide__info-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                  <svg class="slide__info-icon"
+                    width="12"
+                    height="12"
+                    aria-hidden="true"
+                    focusable="false">
                     <use href="/__spritemap#sprite-moon"></use>
                   </svg>
                   <span class="slide__info-text">6&nbsp;дней/5 ночей</span>
@@ -297,23 +301,46 @@
                 историями и&nbsp;подобрать для вас тур.
               </p>
 
-              <div class="contacts__info">
-                <span class="contacts__phone">
-                  <h6>Телефон</h6>
-                  <a class="phone" href="tel:+79837454545">+7 983 745-45-45</a>
-                </span>
-                <span class="contacts__email">
-                  <h6>Email</h6>
-                  <a class="e-mail" href="mailto:info@lifetour.com">info@lifetour.com</a>
-                </span>
-                <span class="contacts__address">
-                  <h6>Адрес</h6>
-                  <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
-                </span>
-              </div>
+              <table class="contacts__info">
+                <tr>
+                  <td class="contacts__icon">
+                    <svg width="26" height="26" fill="none">
+                      <use href="/__spritemap#sprite-phone"></use>
+                    </svg>
+                  </td>
+                  <td class="contacts__text">
+                    <h6>Телефон</h6>
+                    <a class="phone" href="tel:+79837454545">+7 983 745-45-45</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contacts__icon">
+                    <svg width="26" height="26" fill="none">
+                      <use href="/__spritemap#sprite-email"></use>
+                    </svg>
+                  </td>
+                  <td class="contacts__text">
+                    <h6>Email</h6>
+                    <a class="e-mail" href="mailto:info@example.com">info@example.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="contacts__icon">
+                    <svg width="26" height="26" fill="none">
+                      <use href="/__spritemap#sprite-address"></use>
+                    </svg>
+                  </td>
+                  <td class="contacts__text">
+                    <h6>Адрес</h6>
+                    <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
+                  </td>
+                </tr>
+              </table>
+
             </div>
 
             <div class="contacts__map"></div>
+
           </div>
         </div>
       </div>
@@ -374,14 +401,22 @@
         <div class="card__data">
           <div class="card__info">
             <div class="card__location">
-              <svg class="card__location-icon" width="12" height="15" aria-hidden="true" focusable="false">
+              <svg class="card__location-icon"
+                width="12"
+                height="15"
+                aria-hidden="true"
+                focusable="false">
                 <use href="/__spritemap#sprite-pin"></use>
               </svg>
               <span class="card__location-text"></span>
             </div>
             <div class="card__duration">
               <div class="card__days">
-                <svg class="card__days-icon" width="20" height="20" aria-hidden="true" focusable="false">
+                <svg class="card__days-icon"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false">
                   <use href="/__spritemap#sprite-sun"></use>
                 </svg>
                 <span class="card__days-text"></span>
