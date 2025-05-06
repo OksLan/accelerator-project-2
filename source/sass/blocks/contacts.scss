@@ -12,11 +12,15 @@
 
   & h3 {
     margin-bottom: 25px;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 20px;
+    }
   }
 }
 
 .contacts-wrapper {
-  padding: 100px 0 95px;
+  padding: 100px 120px 95px;
 
   @media screen and (width < 1439px)  {
     padding: 40px 0;
@@ -31,33 +35,83 @@
   display: flex;
   color: #2d383f;
   justify-content: space-between;
+
+  @media screen and (width < 1439px)  {
+    flex-direction: column;
+  }
 }
 
 .contacts__details {
-  max-width: 500px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (width < 1439px)  {
+    padding: 0 43px 0 45px;
+  }
 
   & p {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 50px;
+    max-width: 500px;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 40px;
+    }
+  }
+
+  & a {
+    @media screen and (width < 1439px)  {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 40px;
+    }
   }
 }
 
 .contacts__info {
   display: flex;
   flex-direction: column;
-  border-collapse: separate;
-  border-spacing: 0 20px;
+  gap: 35px;
 
     & h6 {
     margin-bottom: 8px;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 6px;
     }
+  }
+
+  @media screen and (width < 1439px)  {
+    flex-direction: row;
+    gap: 35px;
+  }
+}
+
+.contacts__info-item {
+  display: flex;
+
+  & span {
+    @media screen and (width < 1439px)  {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
 }
 
 .contacts__icon svg {
   margin-right: 30px;
+  width: 26px;
+  height: 26px;
+
+  @media screen and (width < 1439px)  {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .contacts__map {
