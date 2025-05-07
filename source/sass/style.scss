@@ -207,6 +207,16 @@ ul {
   color: #2d383f;
   font-size: 16px;
   line-height: 24px;
+
+  @media screen and (width < 1439px)  {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media screen and (width < 767px)  {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 // .vk-icon,
