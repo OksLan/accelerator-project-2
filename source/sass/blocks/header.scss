@@ -142,19 +142,19 @@
     border: 1px solid transparent;
     padding: 3px 5px;
   }
-  
+
   &:hover span {
     border-bottom: 1px solid #ffffff;
   }
-  
+
   &:focus span {
     border-color: #ffffff;
   }
-  
+
   &:active {
     color: #1c3374;
   }
-  
+
   &:disabled {
     color: #999999;
     pointer-events: none;
@@ -175,41 +175,29 @@
 
 //телефон
 .header__phone {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
   color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
-  justify-content: center;
 
   &:hover {
     opacity: 0.5;
   }
-  
+
   &:focus {
     color: #2d383f;
   }
-  
+
   &:active {
     color: #1c3374;
   }
-  
+
   &:disabled {
     color: #999999;
   }
 
   @media screen and (width < 1439px) {
-    font-size: 16px;
-    line-height: 16px;
     text-align: center;
   }
 
   @media screen and (width < 767px) {
-    font-size: 14px;
-    line-height: 14px;
     margin-top: 56px;
     left: 0;
   }

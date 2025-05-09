@@ -9,6 +9,7 @@
 @import "blocks/about";
 @import "blocks/form";
 @import "blocks/contacts";
+@import "blocks/footer";
 
 
 body {
@@ -198,12 +199,30 @@ ul {
     border: none;
   }
 }
+
 .logo {
   width: 142px;
   height: 42px;
 }
 
-.phone,
+.phone {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  @media screen and (width < 1439px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media screen and (width < 767px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.phone-number,
 .e-mail {
   color: #2d383f;
   font-size: 16px;
@@ -218,6 +237,13 @@ ul {
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
 }
 
 // .vk-icon,

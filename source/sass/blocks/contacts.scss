@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: row;
 
+  background-color: aliceblue;
+
   @media screen and (width < 1439px)  {
     height: 681px;
     flex-direction: column;
