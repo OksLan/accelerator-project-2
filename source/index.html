@@ -33,22 +33,13 @@
         </button>
 
           <a class="header__logo" href="#">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                type="image/svg+xml"
-                width="142"
-                height="42"
-                srcset="img/logo/logo-header.svg"
-              >
-              <img
-                class="header__logo-pic"
-                src="img/logo/logo-header.svg"
-                width="142"
-                height="42"
-                alt="Логотип Lifetour"
-              >
-            </picture>
+            <svg class="logo"
+              width="142"
+              height="42"
+              aria-hidden="true"
+              focusable="false">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
           </a>
 
           <div class="header__nav">
@@ -139,14 +130,22 @@
               </a>
               <div class="slide__info">
                 <div class="slide__info-item">
-                  <svg class="slide__info-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                  <svg class="slide__info-icon"
+                    width="12"
+                    height="12"
+                    aria-hidden="true"
+                    focusable="false">
                     <use href="/__spritemap#sprite-moon"></use>
                   </svg>
                   <span class="slide__info-text">9&nbsp;дней/10 ночей</span>
                 </div>
 
                 <div class="slide__info-item">
-                  <svg class="slide__info-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                  <svg class="slide__info-icon"
+                    width="12"
+                    height="12"
+                    aria-hidden="true"
+                    focusable="false">
                     <use href="/__spritemap#sprite-level"></use>
                   </svg>
                   <span class="slide__info-text">Средняя сложность</span>
