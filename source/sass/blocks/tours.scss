@@ -12,6 +12,7 @@
     }
 
     & h3 {
+      position: relative;
       margin-bottom: 53px;
 
       @media screen and (width < 1439px)  {
@@ -20,13 +21,9 @@
 
       &:after {
         content: "Ближайшие туры";
-        left: 122px;
-        top: 83px;
-
-        @media screen and (width < 1439px)  {
-          left: 45px;
-          top: 28px;
-        }
+        position: absolute;
+        top: -14px;
+        left: 0;
       }
   }
 }
