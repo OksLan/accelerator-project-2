@@ -246,6 +246,53 @@ ul {
   justify-content: center;
 }
 
+.swiper__buttons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  cursor: pointer;
+
+  @media screen and (width < 767px) {
+    display: none;
+  }
+}
+
+.swiper__button {
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 1px solid #1c3374;
+
+    & .swiper__button-icon {
+      color:#1c3374;
+    }
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+
+    & .swiper__button-icon {
+      color:#1c3374;
+    }
+  }
+
+  &:active {
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    border: 1px solid #999999;
+  }
+}
+
 // .vk-icon,
 // .ok-icon,
 // .rd-icon {
