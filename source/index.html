@@ -192,17 +192,19 @@
         <div class="tours-wrapper">
           <h3>Ближайшие туры</h3>
 
-          <div class="tours__buttons swiper__buttons">
-            <button class="swiper__button swiper__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
-              <svg class="swiper__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-prev"></use>
-              </svg>
-            </button>
-            <button class="swiper__button swiper__button--next" aria-label="Посмотреть следующий тур">
-              <svg class="swiper__button-icon" width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-next"></use>
-              </svg>
-            </button>
+          <div class="tours__buttons">
+            <div class="swiper-buttons">
+              <button class="swiper-buttons__button swiper-buttons__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
+                <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-prev"></use>
+                </svg>
+              </button>
+              <button class="swiper-buttons__button swiper-buttons__button--next" aria-label="Посмотреть следующий тур">
+                <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use href="/__spritemap#sprite-next"></use>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="swiper tours__swiper">
@@ -360,37 +362,37 @@
     <div class="contacts__map"></div>
     </div>
 
-    <div data-test="footer">
+    <div class="footer" data-test="footer">
       <div class="div-wrapper">
         <div class="footer-wrapper">
           <div class="footer__content">
 
-            <div class="footer__links">
+            <div class="footer__nav">
 
-              <a class="footer__logo" href="#" aria-label="Логотип SuperGym">
-              <svg class="logo" width="130" height="26">
+              <a class="footer__logo" href="#" aria-label="Логотип LifeTour">
+              <svg class="footer__logo-icon" width="142" height="42">
                 <use href="/__spritemap#sprite-logo_dark"></use>
               </svg>
               </a>
 
-              <ol class="footer__links-list">
-                  <li class="footer__links-item footer__links-item--one">
-                    <a class="footer-link tours-link" href="#">Туры</a>
+              <ol class="footer__nav-list">
+                  <li class="footer__nav-item footer__nav-item--one">
+                    <a class="footer__nav-link" href="#">Туры</a>
                   </li>
-                  <li class="footer__links-item footer__links-item--two">
-                    <a class="footer-link training-link" href="#">Обучение</a>
+                  <li class="footer__nav-item footer__nav-item--two">
+                    <a class="footer__nav-link" href="#">Обучение</a>
                   </li>
-                  <li class="footer__links-item footer__links-item--three">
-                    <a class="footer-link about-link" href="#">О нас</a>
+                  <li class="footer__nav-item footer__nav-item--three">
+                    <a class="footer__nav-link" href="#">О нас</a>
                   </li>
-                  <li class="footer__links-item footer__links-item--four">
-                    <a class="footer-link reviews-link" href="#">Отзывы</a>
+                  <li class="footer__nav-item footer__nav-item--four">
+                    <a class="footer__nav-linkk" href="#">Отзывы</a>
                   </li>
-                  <li class="footer__links-item footer__links-item--five">
-                    <a class="footer-link photos-link" href="#">Фотографии</a>
+                  <li class="footer__nav-item footer__nav-item--five">
+                    <a class="footer__nav-link" href="#">Фотографии</a>
                   </li>
-                  <li class="footer__links-item footer__links-item--six">
-                    <a class="footer-link contacts-link" href="#">Контакты</a>
+                  <li class="footer__nav-item footer__nav-item--six">
+                    <a class="footer__nav-link" href="#">Контакты</a>
                   </li>
               </ol>
 
@@ -398,34 +400,34 @@
 
             </div>
 
-            <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+            <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
                     <span class="visually-hidden">Мы в ВKонтакте</span>
-                    <svg class="vk-icon" width="30" height="30">
+                    <svg class="footer__social-icon footer__social-icon--vk" width="30" height="30">
                       <use href="/__spritemap#sprite-vk"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
                     <span class="visually-hidden">Мы в Одноклассниках</span>
-                    <svg class="ok-icon" width="30" height="30">
+                    <svg class="footer__social-icon footer__social-icon--ok" width="30" height="30">
                       <use href="/__spritemap#sprite-ok"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
                     <span class="visually-hidden">Мы на Reddit</span>
-                    <svg class="rd-icon" width="30" height="30">
+                    <svg class="footer__social-icon footer__social-icon--rd" width="30" height="30">
                       <use href="/__spritemap#sprite-reddit"></use>
                     </svg>
                   </a>
                 </li>
             </ul>
 
-            <span>Политика конфиденциальности</span>
+            <span class="footer__privacy">Политика конфиденциальности</span>
           </div>
         </div>
       </div>

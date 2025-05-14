@@ -58,8 +58,8 @@ const swiperTours = new Swiper('.tours__swiper', {
 
     // Navigation arrows
   navigation: {
-  nextEl: '.swiper__button--next',
-  prevEl: '.swiper__button--prev',
+  nextEl: '.swiper-buttons__button--next',
+  prevEl: '.swiper-buttons__button--prev',
   enabled: true,
   clickable: true,
 },

@@ -10,6 +10,8 @@
 @import "blocks/form";
 @import "blocks/contacts";
 @import "blocks/footer";
+@import "blocks/training";
+
 
 
 body {
@@ -239,14 +241,7 @@ ul {
   }
 }
 
-.social-list {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-}
-
-.swiper__buttons {
+.swiper-buttons {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +253,7 @@ ul {
   }
 }
 
-.swiper__button {
+.swiper-buttons__button {
   width: 37px;
   height: 35px;
   background-color: #0266c1;
@@ -268,8 +263,8 @@ ul {
     background-color: #ffffff;
     border: 1px solid #1c3374;
 
-    & .swiper__button-icon {
-      color:#1c3374;
+    & svg {
+      fill:#1c3374;
     }
   }
 
@@ -277,8 +272,8 @@ ul {
     background-color: #ffffff;
     border: 1px solid #ffffff;
 
-    & .swiper__button-icon {
-      color:#1c3374;
+    & svg {
+      fill:#1c3374;
     }
   }
 
@@ -290,6 +285,10 @@ ul {
   &:disabled {
     background-color: #999999;
     border: 1px solid #999999;
+  }
+
+  & svg {
+    fill: #ffffff;
   }
 }
 
