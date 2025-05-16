@@ -4,13 +4,13 @@
   width: 380px;
   height: 416px;
 
-    @media screen and (width < 1439px)  {
-      width: 330px;
-    }
+  @media screen and (width < 1439px)  {
+    width: 330px;
+  }
 
-    @media screen and (width < 767px) {
-      width: 290px;
-    }
+  @media screen and (width < 767px) {
+    width: 290px;
+  }
 
   &::before {
     position: absolute;

@@ -225,28 +225,96 @@
       </div>
     </div>
 
-    <!-- <div data-test="training">
+    <div class="training" data-test="training">
       <div class="div-wrapper">
         <div class="training-wrapper">
-          <h3>Обучение</h3>
-                    <span>Обучение проводится квалифицированными специалистами,
+          <h3 class="training__title">Обучение</h3>
+          <p>Обучение проводится квалифицированными специалистами,
             за&nbsp;плечами которых десятки пройденных маршрутов Кавказа,
             Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
-          </span>
-          <div class="training__instructors">
-            <h3>Наши инструкторы</h3>
-            <div class="swiper instructors__swiper">
-              <div class="swiper-wrapper instructors__list">
+          </p>
+
+          <div class="training__instructors instructors">
+            <h3 class="instructors__title">Наши инструкторы</h3>
+
+            <div class="instructors__buttons">
+              <div class="swiper-buttons">
+                <button class="swiper-buttons__button swiper-buttons__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
+                  <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use href="/__spritemap#sprite-prev"></use>
+                  </svg>
+                </button>
+                <button class="swiper-buttons__button swiper-buttons__button--next" aria-label="Посмотреть следующий тур">
+                  <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use href="/__spritemap#sprite-next"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
+
+            <div class="instructors__swiper swiper">
+              <div class="swiper-wrapper instructors__list">
+                <div class="instructors__list-item instructor">
+                  <div class="instructor__container">
+                  <picture>
+                    <source
+                      media="(min-width: 1439px)"
+                      class="card__image-webp"
+                      type="image/webp"
+                      width="255"
+                      height="200"
+                    >
+                    <source
+                      media="(min-width: 1439px)"
+                      class="card__image-png"
+                      type="image/png"
+                      width="255"
+                      height="200"
+                    >
+                    <source
+                      media="(min-width: 767px)"
+                      class="card__image-webp"
+                      type="image/webp"
+                      width="182"
+                      height="200"
+                    >
+                    <source
+                      media="(min-width: 767px)"
+                      class="card__image-png"
+                      type="image/png"
+                      width="182"
+                      height="200"
+                    >
+                    <img
+                      class="card__image"
+                      width="255"
+                      height="200"
+                      alt=""
+                    >
+                  </picture>
+                    <a class="instructor__link" href="#">
+                      <h7>Александр<br>Прокофьев</h7>
+                      <svg class="instructor__link-icon" width="24" height="24">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <span>Строгий и&nbsp;внимательный инструктор, весёлый
+                      и&nbsp;общительный человек. Любит природу.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          </div>
+
           <div class="training__process">
             <h5>Процесс обучения</h5>
           </div>
 
         </div>
       </div>
-    </div> -->
+    </div>
 
     <div class="about" data-test="about">
       <div class="div-wrapper">

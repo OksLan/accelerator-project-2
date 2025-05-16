@@ -1,3 +1,116 @@
 .training {
   background-color: antiquewhite;
+  position: relative;
+
+  & p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 820px;
+    display: inline-block;
+    margin-bottom: 56px;
+
+    @media screen and (width < 1439px)  {
+      width: 678px;
+    }
+
+    @media screen and (width < 767px)  {
+      width: 290px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
+
+.training-wrapper {
+  padding: 59px 0;
+
+  @media screen and (width < 767px) {
+    padding: 20px 0;
+  }
+}
+
+.training__title {
+  margin-bottom: 37px;
+  position: relative;
+
+  @media screen and (width < 1439px)  {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (width < 767px)  {
+    margin-top: 16px;
+    margin-bottom: 42px;
+  }
+
+  &::after {
+    content: "Обучение";
+    bottom: 0;
+    left: 0;
+
+    @media screen and (width < 767px)  {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.training .instructors__buttons {
+  position: relative;
+  left: 1121px;
+  bottom: 56px;
+
+  @media screen and (width < 1439px)  {
+    left: 600px;
+    bottom: 60px;
+  }
+
+  @media screen and (width < 767px)  {
+    display: none;
+  }
+}
+
+.training .instructors__title {
+  margin-bottom: 20px;
+}
+
+.swiper.instructors__swiper {
+  position: relative;
+  display: flex;
+  height: 356px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+
+  @media screen and (width < 1439px) {
+    margin-bottom: 25px;
+  }
+}
+
+.instructors__list-item {
+  display: flex;
+  position: relative;
+  width: 285px;
+  height: 356px;
+  border: 1px solid #80b3e0;
+}
+
+.instructor__container {
+  padding: 15px;
+
+  & img {
+    margin-bottom: 15px;
+  }
+
+  & span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.instructor__link {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #2d383f;
+}
+

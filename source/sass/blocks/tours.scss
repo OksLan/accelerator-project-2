@@ -1,69 +1,60 @@
 .tours {
-    height: 813px;
-    background-color: azure;
+  background-color: azure;
+  position: relative;
+
+  & h3 {
     position: relative;
+    margin-bottom: 53px;
 
     @media screen and (width < 1439px)  {
-      height: 637px;
+      margin-bottom: 25px;
+      padding: 20px 0 10px;
     }
 
-    @media screen and (width < 767px) {
-      height: 595px;
+    @media screen and (width < 767px)  {
+      padding: 16px 0 17px;
     }
 
-    & h3 {
-      position: relative;
-      margin-bottom: 53px;
+  &:after {
+    content: "Ближайшие туры";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
 
-      @media screen and (width < 1439px)  {
-        margin-bottom: 25px;
-        padding: 20px 0 10px;
-      }
-
-      @media screen and (width < 767px)  {
-        padding: 16px 0 17px;
-      }
-
-    &:after {
-      content: "Ближайшие туры";
-      position: absolute;
-      bottom: 1px;
-      left: 0;
-
-      @media screen and (width < 1439px)  {
-        top: 5px;
-      }
-
-      @media screen and (width < 767px)  {
-        top: 4px;
-      }
+    @media screen and (width < 1439px)  {
+      top: 5px;
     }
+
+    @media screen and (width < 767px)  {
+      top: 4px;
+    }
+  }
   }
 }
 
 .tours-wrapper {
-    padding: 120px 0 100px;
+  padding: 120px 0 100px;
 
-    @media screen and (width < 1439px)  {
-      padding: 40px 0;
-    }
+  @media screen and (width < 1439px)  {
+    padding: 40px 0;
+  }
 
-    @media screen and (width < 767px) {
-      padding: 20px 0;
-    }
+  @media screen and (width < 767px) {
+    padding: 20px 0;
+  }
 }
 
 .swiper.tours__swiper {
-    position: relative;
-    display: flex;
-    height: 416px;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 53px;
+  position: relative;
+  display: flex;
+  height: 416px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 53px;
 
-    @media screen and (width < 1439px) {
-      margin-bottom: 25px;
-    }
+  @media screen and (width < 1439px) {
+    margin-bottom: 25px;
+  }
 }
 
 .tours__link {
