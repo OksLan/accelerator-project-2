@@ -55,9 +55,8 @@
 }
 
 .training .instructors__buttons {
-  position: relative;
-  left: 1121px;
-  bottom: 56px;
+  left: 1241px;
+  top: 236px;
 
   @media screen and (width < 1439px)  {
     left: 600px;
@@ -73,7 +72,7 @@
   margin-bottom: 20px;
 }
 
-.swiper.instructors__swiper {
+.training .swiper.instructors__swiper {
   position: relative;
   display: flex;
   height: 356px;
@@ -86,15 +85,29 @@
   }
 }
 
-.instructors__list-item {
+.training .instructors__list{
+  gap: 20px;
+}
+
+.training .instructors__list-item {
   display: flex;
   position: relative;
   width: 285px;
   height: 356px;
   border: 1px solid #80b3e0;
+
+  @media screen and (width < 1439px)  {
+    width: 212.67px;
+    height: 388px;
+  }
+
+  @media screen and (width < 767px)  {
+    width: 290px;
+    height: 403px;
+  }
 }
 
-.instructor__container {
+.training .instructor__container {
   padding: 15px;
 
   & img {
@@ -107,7 +120,7 @@
   }
 }
 
-.instructor__link {
+.training .instructor__name {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;

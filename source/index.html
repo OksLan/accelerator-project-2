@@ -192,8 +192,7 @@
         <div class="tours-wrapper">
           <h3>Ближайшие туры</h3>
 
-          <div class="tours__buttons">
-            <div class="swiper-buttons">
+          <div class="tours__buttons swiper-buttons">
               <button class="swiper-buttons__button swiper-buttons__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
                 <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-prev"></use>
@@ -204,7 +203,6 @@
                   <use href="/__spritemap#sprite-next"></use>
                 </svg>
               </button>
-            </div>
           </div>
 
           <div class="swiper tours__swiper">
@@ -237,8 +235,7 @@
           <div class="training__instructors instructors">
             <h3 class="instructors__title">Наши инструкторы</h3>
 
-            <div class="instructors__buttons">
-              <div class="swiper-buttons">
+            <div class="instructors__buttons swiper-buttons">
                 <button class="swiper-buttons__button swiper-buttons__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
                   <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
                     <use href="/__spritemap#sprite-prev"></use>
@@ -249,7 +246,6 @@
                     <use href="/__spritemap#sprite-next"></use>
                   </svg>
                 </button>
-              </div>
             </div>
 
             <div class="instructors__swiper swiper">
@@ -259,40 +255,45 @@
                   <picture>
                     <source
                       media="(min-width: 1439px)"
-                      class="card__image-webp"
+                      class="instructor__image-webp"
                       type="image/webp"
                       width="255"
                       height="200"
+                      srcset="img/instructors/prokofyev-desktop@1x.webp, img/instructors/prokofyev-desktop@2x.webp"
                     >
                     <source
                       media="(min-width: 1439px)"
-                      class="card__image-png"
+                      class="instructor__image-png"
                       type="image/png"
                       width="255"
                       height="200"
+                      srcset="img/instructors/prokofyev-desktop@1x.png, img/instructors/prokofyev-desktop@2x.png"
                     >
                     <source
                       media="(min-width: 767px)"
-                      class="card__image-webp"
+                      class="instructor__image-webp"
                       type="image/webp"
                       width="182"
                       height="200"
+                      srcset="img/instructors/prokofyev-tablet@1x.webp, img/instructors/prokofyev-tablet@2x.webp"
                     >
                     <source
                       media="(min-width: 767px)"
-                      class="card__image-png"
+                      class="instructor__image-png"
                       type="image/png"
                       width="182"
                       height="200"
+                      srcset="img/instructors/prokofyev-tablet@1x.png, img/instructors/prokofyev-tablet@2x.png"
                     >
                     <img
-                      class="card__image"
+                      class="instructor__image"
                       width="255"
                       height="200"
                       alt=""
+                      src="img/instructors/prokofyev-mobile@1x.png"
                     >
                   </picture>
-                    <a class="instructor__link" href="#">
+                    <a class="instructor__name" href="#">
                       <h7>Александр<br>Прокофьев</h7>
                       <svg class="instructor__link-icon" width="24" height="24">
                         <use href="/__spritemap#sprite-vk"></use>
@@ -303,6 +304,63 @@
                     </span>
                   </div>
                 </div>
+
+                <div class="instructors__list-item instructor swiper-slide">
+                  <div class="instructor__container">
+                  <picture>
+                    <source
+                      media="(min-width: 1439px)"
+                      class="instructor__image-webp"
+                      type="image/webp"
+                      width="255"
+                      height="200"
+                      srcset="img/instructors/afinogenova-desktop@1x.webp, img/instructors/afinogenova-desktop@2x.webp"
+                    >
+                    <source
+                      media="(min-width: 1439px)"
+                      class="instructor__image-png"
+                      type="image/png"
+                      width="255"
+                      height="200"
+                      srcset="img/instructors/afinogenova-desktop@1x.png, img/instructors/afinogenova-desktop@2x.png"
+                    >
+                    <source
+                      media="(min-width: 767px)"
+                      class="instructor__image-webp"
+                      type="image/webp"
+                      width="182"
+                      height="200"
+                      srcset="img/instructors/afinogenova-tablet@1x.webp, img/instructors/afinogenova-tablet@2x.webp"
+                    >
+                    <source
+                      media="(min-width: 767px)"
+                      class="instructor__image-png"
+                      type="image/png"
+                      width="182"
+                      height="200"
+                      srcset="img/instructors/afinogenova-tablet@1x.png, img/instructors/afinogenova-tablet@2x.png"
+                    >
+                    <img
+                      class="instructor__image"
+                      width="255"
+                      height="200"
+                      alt=""
+                      src="img/instructors/afinogenova-mobile@1x.png"
+                    >
+                  </picture>
+                    <a class="instructor__name" href="#">
+                      <h7>Светлана<br>Афиногенова</h7>
+                      <svg class="instructor__link" width="24" height="24">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <span>Видеть мир вокруг, познавать его опасности,
+                      находить друг друга, становиться ближе, чувствовать
+                      &nbsp;&mdash; в&nbsp;этом назначение жизни.
+                    </span>
+                  </div>
+                </div>
+
               </div>
             </div>
 

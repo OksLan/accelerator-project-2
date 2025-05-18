@@ -102,13 +102,12 @@
 }
 
 .tours__buttons {
-  position: relative;
-  left: 1121px;
-  bottom: 87px;
+  left: 1241px;
+  top: 120px;
 
   @media screen and (width < 1439px)  {
-    left: 600px;
-    bottom: 60px;
+    left: 645px;
+    top: 60px;
   }
 
   @media screen and (width < 767px)  {
