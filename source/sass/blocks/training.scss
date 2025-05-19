@@ -1,5 +1,5 @@
 .training {
-  background-color: antiquewhite;
+  background-color: aliceblue;
   position: relative;
 
   & p {
@@ -17,6 +17,7 @@
       width: 290px;
       font-size: 14px;
       line-height: 20px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -39,7 +40,7 @@
 
   @media screen and (width < 767px)  {
     margin-top: 16px;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
   }
 
   &::after {
@@ -50,6 +51,7 @@
     @media screen and (width < 767px)  {
       font-size: 26px;
       line-height: 26px;
+      bottom: 14px;
     }
   }
 }
@@ -70,6 +72,10 @@
 
 .training .instructors__title {
   margin-bottom: 20px;
+
+  @media screen and (width < 767px)  {
+    margin-bottom: 25px;
+  }
 }
 
 .training .swiper.instructors__swiper {
@@ -103,7 +109,7 @@
 
   @media screen and (width < 767px)  {
     width: 290px;
-    height: 403px;
+    height: 356px;
   }
 }
 
@@ -127,3 +133,138 @@
   color: #2d383f;
 }
 
+.training__process {
+  & h5 {
+    margin-bottom: 23px;
+
+    @media screen and (width < 1439px)  {
+      margin-bottom: 104px;
+    }
+
+    @media screen and (width < 767px)  {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+$areas: (
+  map,
+  boot,
+  trees,
+  mountain
+);
+
+.training__process-list {
+
+  @each $name in $areas {
+    .training__process-item--#{$name} {
+    grid-area: #{$name};
+  }
+
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(4, 253.33px);
+    grid-template-areas:
+        "map  boot trees mountain"
+  }
+
+  @media screen and (width < 1439px)  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "map      mountain"
+      "boot     trees";
+    column-gap: 174px;
+    row-gap: 104px;
+  }
+
+  @media screen and (width < 767px)  {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "map"
+      "boot"
+      "trees"
+      "mountain";
+    column-gap: 0;
+    row-gap: 25px;
+    margin-left: 29px;
+}
+
+  &::before {
+    content: "";
+    position:absolute;
+    width: 1180px;
+    height: 2px;
+    background-color: #0266c1;
+    bottom: 54px;
+    left: 140px;
+
+    @media screen and (width < 1439px)  {
+      display: none;
+    }
+
+    @media screen and (width < 767px)  {
+      display: block;
+      content: "";
+      position:absolute;
+      width: 2px;
+      height: 183px;
+      background-color: #0266c1;
+      bottom: 36px;
+      left: 23px;
+    }
+  }
+}
+
+
+.training__process-item {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+  position: relative;
+
+    @media screen and (width < 1439px)  {
+      padding: 0;
+    }
+
+  & svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  & span {
+    font-size: 16px;
+    line-height: 24px;
+    color:#2d383f;
+
+    @media screen and (width < 1439px)  {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @media screen and (width < 767px)  {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position:absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #0266c1;
+    border-radius: 50%;
+    top: 70px;
+    left: 10px;
+
+    @media screen and (width < 1439px)  {
+      display: none;
+    }
+
+    @media screen and (width < 767px)  {
+      display: block;
+      top: 10px;
+      left: -27px;
+    }
+  }
+}
