@@ -3,7 +3,8 @@ import {Navigation, Pagination} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { cards, showCards } from "./cards.js"
+import { cards, showCards } from "./cards.js";
+import { instructors, showInstructors } from './instructors.js';
 
 /* ПРОМО слайдер */
 import { initSlider } from "./slider.js";
@@ -50,6 +51,41 @@ const swiperTours = new Swiper('.tours__swiper', {
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+
+    // Navigation arrows
+  navigation: {
+  nextEl: '.swiper-buttons__button--next',
+  prevEl: '.swiper-buttons__button--prev',
+  enabled: true,
+  clickable: true,
+},
+});
+
+/* INSTRUCTORS */
+const instructorsList = document.querySelector(".instructors__list");
+const instructorTemplate = document.querySelector("#instructor");
+
+showInstructors(instructors);
+
+/* INSTRUCTORS свайпер */
+const swiperInstructors = new Swiper('.instructors__swiper', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  speed: 500,
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     320: {
       slidesPerView: 1,
