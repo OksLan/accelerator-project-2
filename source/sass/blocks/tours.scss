@@ -101,20 +101,6 @@
     margin-left: 12px;
 }
 
-.tours__buttons {
-  left: 1241px;
-  top: 120px;
-
-  @media screen and (width < 1439px)  {
-    left: 645px;
-    top: 60px;
-  }
-
-  @media screen and (width < 767px)  {
-    display: none;
-  }
-}
-
 .tours__link-icon {
   stroke: #1c3374;
   stroke-width: 2px;

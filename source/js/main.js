@@ -59,8 +59,8 @@ const swiperTours = new Swiper('.tours__swiper', {
 
     // Navigation arrows
   navigation: {
-  nextEl: '.swiper-buttons__button--next',
-  prevEl: '.swiper-buttons__button--prev',
+  nextEl: '.tours__button--next',
+  prevEl: '.tours__button--prev',
   enabled: true,
   clickable: true,
 },
@@ -92,10 +92,10 @@ const swiperInstructors = new Swiper('.instructors__swiper', {
     },
   },
 
-    // Navigation arrows
+    // Navigation buttons
   navigation: {
-  nextEl: '.swiper-buttons__button--next',
-  prevEl: '.swiper-buttons__button--prev',
+  nextEl: '.instructors__button--next',
+  prevEl: '.instructors__button--prev',
   enabled: true,
   clickable: true,
 },
