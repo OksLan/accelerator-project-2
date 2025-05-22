@@ -77,11 +77,15 @@
   }
 }
 
+.training .instructors__list {
+  align-items: stretch;
+}
+
 .training .instructors__list-item {
   display: flex;
   position: relative;
   width: 285px;
-  height: 356px;
+  height: auto;
   border: 1px solid #80b3e0;
 
   @media screen and (width < 1439px)  {
