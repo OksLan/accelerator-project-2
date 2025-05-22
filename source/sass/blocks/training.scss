@@ -176,8 +176,8 @@ $areas: (
     position: relative;
     width: 1180px;
     height: 2px;
-    top: 5px;
-    left: 20px;
+    top: 4px;
+    left: 24px;
     background-color: #0266c1;
 
     @media screen and (width < 1439px)  {
@@ -190,8 +190,8 @@ $areas: (
       content: "";
       width: 2px;
       height: 183px;
-      bottom: 36px;
-      left: -21px;
+      top: 751px;
+      left: 23px;
     }
   }
 }
