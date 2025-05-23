@@ -53,8 +53,7 @@
 }
 
 .card__info {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
@@ -82,6 +81,11 @@
 .card__duration {
   display: flex;
   gap: 14px;
+
+  @media screen and (width < 767px) {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .card__days,

@@ -1,20 +1,47 @@
 .about {
   position: relative;
   background-color: honeydew;
+}
+
+.about-wrapper {
+  padding: 100px 0;
+
+  @media screen and (width < 1439px)  {
+    padding: 40px 0;
+  }
+
+  @media screen and (width < 767px) {
+    padding: 20px 0;
+  }
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 660px 1fr;
+  margin-right: 120px;
+
+  @media screen and (width < 1439px)  {
+    margin-right: 48px;
+    grid-template-columns: 450px 1fr;
+  }
+
+  @media screen and (width < 767px)  {
+    margin-right: 0;
+  }
 
   & h3 {
     margin-top: 45px;
-    margin-bottom: 57px;
+    margin-bottom: 32px;
     position: relative;
 
     @media screen and (width < 1439px)  {
       margin-top: 20px;
-      margin-bottom: 46px;
+      margin-bottom: 21px;
     }
 
     @media screen and (width < 767px)  {
       margin-top: 16px;
-      margin-bottom: 42px;
+      margin-bottom: 17px;
     }
 
     &::after {
@@ -33,100 +60,61 @@
       }
     }
   }
-
-  & h5 {
-    margin-bottom: 20px;
-
-    @media screen and (width < 1439px)  {
-      margin-bottom: 15px;
-    }
-  }
-
-  & p {
-    font-size: 14px;
-    line-height: 22px;
-
-    @media screen and (width < 1439px)  {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    @media screen and (width < 767px)  {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 660px;
-    height: 498px;
-    background-image: url("/img/about/bckgnd-desktop@2x.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 100px;
-    z-index: 1;
-
-    @media screen and (width < 1439px)  {
-      width: 542px;
-      height: 350px;
-      background-image: url("/img/about/bckgnd-tablet@2x.webp");
-      top: 174px;
-    }
-
-    @media screen and (width < 767px)  {
-      width: 100%;
-      height: 400px;
-      background-image: url("/img/about/bckgnd-mobile@2x.webp");
-      top: 20px;
-    }
-  }
 }
 
-.about-wrapper {
-  padding-top: 100px;
-  padding-bottom: 178px;
+.about__picture {
+  background-image: url("/img/about/bckgnd-desktop@2x.webp");
+  background-repeat: no-repeat;
+  background-size: 660px 498px;
 
   @media screen and (width < 1439px)  {
-    padding: 40px 0;
+    background-image: url("/img/about/bckgnd-tablet@2x.webp");
+    background-size: 542px 350px;
+    margin-top: 134px;
   }
 
-  @media screen and (width < 767px) {
-    padding: 20px 0;
+  @media screen and (width < 767px)  {
+    background-image: url("/img/about/bckgnd-mobile@2x.webp");
+    background-size: 100% 400px;
+    margin-top: 0;
   }
 }
 
-.about__content {
+
+.about__text {
   display: flex;
   flex-direction: column;
-  position: relative;
-  padding-left: 45%;
-  z-index: 10;
+  gap: 25px;
+  margin-bottom: 78px;
 
   @media screen and (width < 1439px)  {
-    padding-left: 60%;
+    margin-bottom: 0;
+  }
+
+  @media screen and (width < 1439px)  {
+    margin: 0 15px;
+  }
+
+& span {
+  font-size: 14px;
+  line-height: 22px;
+
+  @media screen and (width < 1439px)  {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media screen and (width < 767px)  {
-    padding-left: 0;
-    padding-top: 420px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
-
-.about__history {
-  margin-bottom: 25px;
-}
-
-.about__history,
-.about__mission {
-  max-width: 585px;
+  
+& h5 {
+  margin-bottom: 20px;
 
   @media screen and (width < 1439px)  {
-    max-width: 270px;
+    margin-bottom: 15px;
   }
-
-  @media screen and (width < 767px)  {
-    max-width: 290px;
-  }
+ }
 }

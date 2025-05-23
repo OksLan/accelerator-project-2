@@ -141,6 +141,7 @@ $areas: (
 );
 
 .training__process-list {
+  position: relative;
 
   @each $name in $areas {
     .training__process-item--#{$name} {
@@ -177,10 +178,10 @@ $areas: (
 
   &::before {
     content: "";
-    position: relative;
+    position: absolute;
     width: 1180px;
     height: 2px;
-    top: 4px;
+    bottom: -4px;
     left: 24px;
     background-color: #0266c1;
 
@@ -194,8 +195,8 @@ $areas: (
       content: "";
       width: 2px;
       height: 183px;
-      top: 751px;
-      left: 23px;
+      bottom: 13px;
+      left: -21px;
     }
   }
 }
@@ -212,6 +213,7 @@ $areas: (
     }
 
   & svg {
+    flex-shrink: 0;
     width: 25px;
     height: 25px;
   }
