@@ -3,7 +3,9 @@ import {Navigation, Pagination} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { cards, showCards } from "./cards.js";
+import { tourCards, showCards } from './tour-cards.js';
+
+
 import { instructors, showInstructors } from './instructors.js';
 
 /* ПРОМО слайдер */
@@ -33,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* TOURS */
 const catalog = document.querySelector(".tours__list");
-const cardTemplate = document.querySelector("#card");
+const cardTemplate = document.querySelector("#tour-card");
 
-showCards(cards);
+showCards(tourCards);
 
 /* TOURS свайпер */
 const swiperTours = new Swiper('.tours__swiper', {

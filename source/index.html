@@ -477,108 +477,94 @@
       </div>
     </div>
 
-   <!--темплейт карточки каталога Ближайшие туры -->
-    <template id="card">
-      <article class="tours__list-item card swiper-slide">
-        <a class="card__link" href="#">
-          <div class="card__image-wrapper">
+    <!-- темплейт карточки каталога Ближайшие туры -->
+    <template id="tour-card">
+      <article class="tours__list-item tour-card swiper-slide">
+        <a class="tour-card__link" href="#">
+          <div class="tour-card__image-wrapper">
             <picture>
               <source
                 media="(min-width: 1439px)"
-                class="card__image-webp"
+                class="tour-card__image-webp"
                 type="image/webp"
                 width="380"
                 height="416"
-                data-srcset="img/cards/[[id]]-desktop@1x.webp 1x, img/cards/[[id]]-desktop@2x.webp 2x"
-              >
+                data-srcset="img/cards/[[id]]-desktop@1x.webp 1x, img/cards/[[id]]-desktop@2x.webp 2x">
               <source
                 media="(min-width: 1439px)"
-                class="card__image-png"
+                class="tour-card__image-png"
                 type="image/png"
                 width="380"
                 height="416"
-                data-srcset="img/cards/[[id]]-desktop@1x.png 1x, img/cards/[[id]]-desktop@2x.png 2x"
-              >
+                data-srcset="img/cards/[[id]]-desktop@1x.png 1x, img/cards/[[id]]-desktop@2x.png 2x">
               <source
                 media="(min-width: 767px)"
-                class="card__image-webp"
+                class="tour-card__image-webp"
                 type="image/webp"
                 width="330"
                 height="416"
-                data-srcset="img/cards/[[id]]-tablet@1x.webp 1x, img/cards/[[id]]-tablet@2x.webp 2x"
-              >
+                data-srcset="img/cards/[[id]]-tablet@1x.webp 1x, img/cards/[[id]]-tablet@2x.webp 2x">
               <source
                 media="(min-width: 767px)"
-                class="card__image-png"
+                class="tour-card__image-png"
                 type="image/png"
                 width="330"
                 height="416"
-                data-srcset="img/cards/[[id]]-tablet@1x.png 1x, img/cards/[[id]]-tablet@2x.png 2x"
-              >
+                data-srcset="img/cards/[[id]]-tablet@1x.png 1x, img/cards/[[id]]-tablet@2x.png 2x">
               <img
-                class="card__image"
+                class="tour-card__image"
                 data-src="img/cards/[[id]]-mobile@1x.png"
                 data-srcset="img/cards/[[id]]-mobile@1x.png 1x, img/cards/[[id]]-mobile@2x.png 2x"
                 width="290"
                 height="416"
-                alt=""
-              >
+                alt="">
             </picture>
           </div>
         </a>
-        <div class="card__data">
-          <div class="card__info">
-            <div class="card__location">
-              <svg class="card__location-icon"
-                width="12"
-                height="15"
-                aria-hidden="true"
-                focusable="false">
+        <div class="tour-card__data">
+          <div class="tour-card__info">
+            <div class="tour-card__location">
+              <svg class="tour-card__location-icon" width="12" height="15" aria-hidden="true" focusable="false">
                 <use href="/__spritemap#sprite-pin"></use>
               </svg>
-              <span class="card__location-text"></span>
+              <span class="tour-card__location-text"></span>
             </div>
-            <div class="card__duration">
-              <div class="card__days">
-                <svg class="card__days-icon"
-                  width="20"
-                  height="20"
-                  aria-hidden="true"
-                  focusable="false">
+            <div class="tour-card__duration">
+              <div class="tour-card__days">
+                <svg class="tour-card__days-icon" width="20" height="20" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-sun"></use>
                 </svg>
-                <span class="card__days-text"></span>
+                <span class="tour-card__days-text"></span>
               </div>
-
-              <div class="card__nights">
-                <svg class="card__nights-icon" width="16" height="16" aria-hidden="true" focusable="false">
+              <div class="tour-card__nights">
+                <svg class="tour-card__nights-icon" width="16" height="16" aria-hidden="true" focusable="false">
                   <use href="/__spritemap#sprite-moon"></use>
                 </svg>
-                <span class="card__nights-text"></span>
+                <span class="tour-card__nights-text"></span>
               </div>
             </div>
           </div>
-          <a class="card__link card__link--title" href="#">
-            <h4 class="card__title"></h4>
+          <a class="tour-card__link tour-card__link--title" href="#">
+            <h4 class="tour-card__title"></h4>
           </a>
-          <div class="card__details">
-            <div class="card__stars">
-              <span class="card__stars-text">Сложность:</span>
-              <svg class="card__stars-icon" width="84" height="16" aria-hidden="true" focusable="false">
-              </svg>
+          <div class="tour-card__details">
+            <div class="tour-card__stars">
+              <span class="tour-card__stars-text">Сложность:</span>
+              <svg class="tour-card__stars-icon" width="84" height="16" aria-hidden="true" focusable="false"></svg>
             </div>
-            <div class="card__dates">
-              <span class="card__dates-text">Даты набора:</span>
-              <span class="card__dates-dates"></span>
+            <div class="tour-card__dates">
+              <span class="tour-card__dates-text">Даты набора:</span>
+              <span class="tour-card__dates-dates"></span>
             </div>
-            <div class="card__group">
-              <span class="card__group-text">Группа:</span>
-              <span class="card__group-number"></span>
+            <div class="tour-card__group">
+              <span class="tour-card__group-text">Группа:</span>
+              <span class="tour-card__group-number"></span>
             </div>
           </div>
         </div>
       </article>
     </template>
+
 
     <!--темплейт карточки Инструктор -->
     <template id="instructor">

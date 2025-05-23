@@ -1,10 +1,10 @@
-.card {
+.tour-card {
   position: relative;
   background-color: #0266c1;
   width: 380px;
   height: 416px;
 
-  @media screen and (width < 1439px)  {
+  @media screen and (width < 1439px) {
     width: 330px;
   }
 
@@ -23,21 +23,21 @@
   }
 }
 
-.card picture::after {
+.tour-card picture::after {
   position: absolute;
   content: "";
   inset: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
 }
 
-.card__data {
+.tour-card__data {
   position: absolute;
   bottom: 0;
   color: #ffffff;
   padding: 0 20px 30px;
   width: 380px;
 
-  @media screen and (width < 1439px)  {
+  @media screen and (width < 1439px) {
     width: 330px;
   }
 
@@ -46,13 +46,13 @@
   }
 }
 
-.card__link--title {
+.tour-card__link--title {
   color: #ffffff;
   margin-bottom: 31px;
   display: flex;
 }
 
-.card__info {
+.tour-card__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@
   }
 }
 
-.card__location {
+.tour-card__location {
   display: flex;
   background-color: #0266c1;
   padding: 6px 16px 7px 13px;
@@ -74,11 +74,11 @@
   justify-self: flex-start;
 }
 
-.card__location-icon {
+.tour-card__location-icon {
   margin-right: 6px;
 }
 
-.card__duration {
+.tour-card__duration {
   display: flex;
   gap: 14px;
 
@@ -88,18 +88,18 @@
   }
 }
 
-.card__days,
-.card__nights {
+.tour-card__days,
+.tour-card__nights {
   display: flex;
   align-items: center;
 }
 
-.card__days-icon,
-.card__nights-icon {
+.tour-card__days-icon,
+.tour-card__nights-icon {
   margin-right: 12px;
 }
 
-.card__details {
+.tour-card__details {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -108,15 +108,15 @@
   line-height: 12px;
 }
 
-.card__stars,
-.card__dates,
-.card__group {
+.tour-card__stars,
+.tour-card__dates,
+.tour-card__group {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
 
-.card__dates-dates,
-.card__group-number {
+.tour-card__dates-dates,
+.tour-card__group-number {
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
