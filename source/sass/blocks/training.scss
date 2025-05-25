@@ -77,6 +77,15 @@
   }
 }
 
+.training .instructors__buttons {
+  left: 1122px;
+  bottom: 53px;
+
+  @media screen and (width < 1439px)  {
+    left: 600px;
+  }
+}
+
 .training .instructors__list {
   align-items: stretch;
 }

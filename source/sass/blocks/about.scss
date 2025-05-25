@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: 660px 1fr;
   margin-right: 120px;
+  height: 100%;
 
   @media screen and (width < 1439px)  {
     margin-right: 48px;

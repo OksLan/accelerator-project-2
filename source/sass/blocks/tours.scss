@@ -57,6 +57,16 @@
   }
 }
 
+.tours__buttons {
+  left: 1122px;
+  bottom: 83px;
+
+  @media screen and (width < 1439px)  {
+    left: 600px;
+    top: -68px;
+  }
+}
+
 .tours__link {
   display: flex;
   justify-content: center;
