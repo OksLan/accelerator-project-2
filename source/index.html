@@ -190,21 +190,30 @@
     <div class="tours" data-test="tours">
       <div class="div-wrapper">
         <div class="tours-wrapper">
-          <h3>Ближайшие туры</h3>
-
-          <!-- <div class="tours__buttons swiper-buttons">
-            <button class="swiper-buttons__button tours__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
-              <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-prev"></use>
-              </svg>
-            </button>
-            <button class="swiper-buttons__button tours__button--next" aria-label="Посмотреть следующий тур">
-              <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
-                <use href="/__spritemap#sprite-next"></use>
-              </svg>
-            </button>
-        </div> -->
-
+          <div class="tours__heading">
+            <h3>Ближайшие туры</h3>
+            <div class="tours__buttons swiper-buttons">
+              <button class="swiper-buttons__button tours__button--prev" aria-label="Посмотреть предыдущий тур" disabled>
+                <svg width="13" 
+                height="8" 
+                fill="currentColor" 
+                aria-hidden="true" 
+                focusable="false">
+                  <use href="/__spritemap#sprite-prev"></use>
+                </svg>
+              </button>
+              <button class="swiper-buttons__button tours__button--next" aria-label="Посмотреть следующий тур">
+                <svg width="13" 
+                height="8" 
+                fill="currentColor" 
+                aria-hidden="true" 
+                focusable="false">
+                  <use href="/__spritemap#sprite-next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
           <div class="swiper tours__swiper">
             <div class="swiper-wrapper tours__list">
             </div>
@@ -218,7 +227,6 @@
               <use href="/__spritemap#sprite-right"></use>
             </svg>
           </div>
-
         </div>
       </div>
     </div>
@@ -233,60 +241,68 @@
           </p>
 
           <div class="training__instructors instructors">
-            <h3 class="instructors__title">Наши инструкторы</h3>
-
-            <!-- <div class="instructors__buttons swiper-buttons">
+            <div class="instructors__heading">
+              <h3 class="instructors__title">Наши инструкторы</h3>
+              <div class="instructors__buttons swiper-buttons">
                 <button class="swiper-buttons__button instructors__button--prev" aria-label="Посмотреть предыдущего инструктора" disabled>
-                  <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                  <svg width="13" 
+                  height="8" 
+                  fill="currentColor" 
+                  aria-hidden="true" 
+                  focusable="false">
                     <use href="/__spritemap#sprite-prev"></use>
                   </svg>
                 </button>
                 <button class="swiper-buttons__button instructors__button--next" aria-label="Посмотреть следующего инструктора">
-                  <svg width="13" height="8" fill="currentColor" aria-hidden="true" focusable="false">
+                  <svg width="13" 
+                  height="8" 
+                  fill="currentColor" 
+                  aria-hidden="true" 
+                  focusable="false">
                     <use href="/__spritemap#sprite-next"></use>
                   </svg>
                 </button>
-            </div> -->
+              </div>
+            </div>
 
             <div class="instructors__swiper swiper">
               <div class="swiper-wrapper instructors__list">
               </div>
             </div>
+
+            <div class="training__process">
+              <h5>Процесс обучения</h5>
+              <ul class="training__process-list">
+                <li class="training__process-item training__process-item--map">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-map"></use>
+                  </svg>
+                  <span>Изучение спортивного туристского движения</span>
+                </li>
+  
+                <li class="training__process-item training__process-item--boot">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-boot"></use>
+                  </svg>
+                  <span>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</span>
+                </li>
+  
+                <li class="training__process-item training__process-item--trees">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-trees"></use>
+                  </svg>
+                  <span>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</span>
+                </li>
+  
+                <li class="training__process-item training__process-item--mountain">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-mountain"></use>
+                  </svg>
+                  <span>Разъяснение сложности горных препятствий</span>
+                </li>
+              </ul>
+            </div>
           </div>
-
-          <div class="training__process">
-            <h5>Процесс обучения</h5>
-            <ul class="training__process-list">
-              <li class="training__process-item training__process-item--map">
-                <svg width="25" height="25">
-                  <use href="/__spritemap#sprite-map"></use>
-                </svg>
-                <span>Изучение спортивного туристского движения</span>
-              </li>
-
-              <li class="training__process-item training__process-item--boot">
-                <svg width="25" height="25">
-                  <use href="/__spritemap#sprite-boot"></use>
-                </svg>
-                <span>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</span>
-              </li>
-
-              <li class="training__process-item training__process-item--trees">
-                <svg width="25" height="25">
-                  <use href="/__spritemap#sprite-trees"></use>
-                </svg>
-                <span>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</span>
-              </li>
-
-              <li class="training__process-item training__process-item--mountain">
-                <svg width="25" height="25">
-                  <use href="/__spritemap#sprite-mountain"></use>
-                </svg>
-                <span>Разъяснение сложности горных препятствий</span>
-              </li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </div>

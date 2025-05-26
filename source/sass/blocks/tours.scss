@@ -2,34 +2,35 @@
   background-color: azure;
   position: relative;
 
-  & h3 {
-    position: relative;
-    margin-bottom: 53px;
+  // & h3 {
+  //   position: relative;
+  //   margin-bottom: 53px;
+  //   width: 100%;
 
-    @media screen and (width < 1439px)  {
-      margin-bottom: 25px;
-      padding: 20px 0 10px;
-    }
+  //   @media screen and (width < 1439px)  {
+  //     margin-bottom: 25px;
+  //     padding: 20px 0 10px;
+  //   }
 
-    @media screen and (width < 767px)  {
-      padding: 16px 0 17px;
-    }
+  //   @media screen and (width < 767px)  {
+  //     padding: 16px 0 17px;
+  //   }
 
-  &:after {
-    content: "Ближайшие туры";
-    position: absolute;
-    bottom: 1px;
-    left: 0;
+  // &:after {
+  //   content: "Ближайшие туры";
+  //   position: absolute;
+  //   bottom: 1px;
+  //   left: 0;
 
-    @media screen and (width < 1439px)  {
-      top: 5px;
-    }
+  //   @media screen and (width < 1439px)  {
+  //     top: 5px;
+  //   }
 
-    @media screen and (width < 767px)  {
-      top: 4px;
-    }
-  }
-  }
+  //   @media screen and (width < 767px)  {
+  //     top: 4px;
+  //   }
+  // }
+  // }
 }
 
 .tours-wrapper {
@@ -57,12 +58,38 @@
   }
 }
 
-.tours__buttons {
-  // bottom: 83px;
+.tours__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
 
   @media screen and (width < 1439px)  {
-    // top: -68px;
+    margin-bottom: 25px;
   }
+
+  & h3 {
+    position: relative;
+    width: 100%;
+
+    @media screen and (width < 767px)  {
+      padding: 16px 0 17px;
+    }
+
+  &:after {
+    content: "Ближайшие туры";
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+
+    @media screen and (width < 1439px)  {
+      bottom: 5px;
+    }
+
+    @media screen and (width < 767px)  {
+      top: 4px;
+    }
+  }
+}
 }
 
 .tours__link {

@@ -23,7 +23,7 @@
 }
 
 .training-wrapper {
-  padding: 59px 0;
+  padding: 55px 0 40px;
 
   @media screen and (width < 767px) {
     padding: 20px 0;
@@ -56,11 +56,13 @@
   }
 }
 
-.training .instructors__title {
+.training .instructors__heading {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 
-  @media screen and (width < 767px)  {
-    margin-bottom: 25px;
+  @media screen and (width < 1439px)  {
+    margin-bottom: 30px;
   }
 }
 
@@ -147,6 +149,7 @@ $areas: (
 
 .training__process-list {
   position: relative;
+  margin-bottom: 22px;
 
   @each $name in $areas {
     .training__process-item--#{$name} {
@@ -186,7 +189,7 @@ $areas: (
     position: absolute;
     width: 1180px;
     height: 2px;
-    bottom: -4px;
+    bottom: -6px;
     left: 24px;
     background-color: #0266c1;
 
