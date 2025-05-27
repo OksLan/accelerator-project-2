@@ -29,3 +29,40 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.review__container {
+  display: flex;
+  gap: 30px;
+  background-color: #ffffff;
+  max-width: 700px;
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0px 0px 20px 0px #1C33741A;
+}
+
+.review__text {
+  display: flex;
+  flex-direction: column;
+
+  & span {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 2px;
+  }
+
+  & span p:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.review__name {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.review__details {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
