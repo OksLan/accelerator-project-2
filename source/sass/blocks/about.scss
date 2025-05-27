@@ -17,15 +17,19 @@
 
 .about__content {
   display: grid;
-  grid-template-columns: 1fr 585px;
+  grid-template-columns: 660px 585px;
   margin-right: calc((100% - 1200px) / 2);
-  height: calc(((100vw - 1200px) / 2 + 585px) * 0.66);
+  width: calc(((100vw - 1200px) / 2 + 585px) * 0.66);
 
   @media screen and (width < 1439px)  {
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 450px 270px;
+    width: calc(((100vw - 1200px) / 2 + 585px) * 0.66);
+    margin-right: 0;
   }
 
   @media screen and (width < 767px)  {
+    grid-template-columns: 320px;
+    width: 0;
     margin-right: 0;
   }
 
@@ -66,17 +70,20 @@
   background-image: url("/img/about/bckgnd-desktop@2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  width: 100%;
+  height: 498px;
+  width: 660px;
   align-self: center;
 
   @media screen and (width < 1439px)  {
     background-image: url("/img/about/bckgnd-tablet@2x.webp");
+    height: 350px;
+    width: 542px;
   }
 
   @media screen and (width < 767px)  {
     background-image: url("/img/about/bckgnd-mobile@2x.webp");
-    margin-top: 0;
+    height: 400px;
+    width: 320px;
   }
 }
 

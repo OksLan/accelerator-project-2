@@ -1,0 +1,31 @@
+.reviews {
+}
+
+.reviews-wrapper {
+  padding: 100px 0 77px;
+}
+
+.reviews__heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.reviews__title {
+  position: relative;
+
+  &::after {
+  content: "Отзывы";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  }
+}
+
+.swiper.reviews__swiper {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
