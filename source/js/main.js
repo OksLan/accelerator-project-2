@@ -4,9 +4,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { tourCards, showCards } from './tour-cards.js';
-
-
 import { instructors, showInstructors } from './instructors.js';
+import { reviews, showReviews } from './reviews.js';
 
 /* ПРОМО слайдер */
 import { initSlider } from "./slider.js";
@@ -98,6 +97,41 @@ const swiperInstructors = new Swiper('.instructors__swiper', {
   navigation: {
   nextEl: '.instructors__button--next',
   prevEl: '.instructors__button--prev',
+  enabled: true,
+  clickable: true,
+},
+});
+
+/* REVIEWS */
+const reviewsList = document.querySelector(".reviews__list");
+const reviewTemplate = document.querySelector("#review");
+
+showReviews(reviews);
+
+/* REVIEWS свайпер */
+const swiperReviews = new Swiper('.reviews__swiper', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  speed: 500,
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 1,
+      spaceBetween: 120,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+
+    // Navigation buttons
+  navigation: {
+  nextEl: '.reviews__button--next',
+  prevEl: '.reviews__button--prev',
   enabled: true,
   clickable: true,
 },
