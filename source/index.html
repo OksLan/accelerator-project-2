@@ -733,50 +733,49 @@
       </article>
     </template>
 
-
     <!--темплейт карточки Инструктор -->
     <template id="instructor">
       <article class="instructors__list-item instructor swiper-slide">
         <div class="instructor__container">
           <picture>
             <source
-            media="(min-width: 1439px)"
-            class="instructor__image-webp"
-            type="image/webp"
-            width="255"
-            height="200"
-            srcset="img/instructors/prokofyev-desktop@1x.webp 1x, img/instructors/prokofyev-desktop@2x.webp 2x"
+              media="(min-width: 1439px)"
+              class="instructor__image-webp"
+              type="image/webp"
+              width="255"
+              height="200"
+              data-srcset="img/instructors/[[id]]-desktop@1x.webp 1x, img/instructors/[[id]]-desktop@2x.webp 2x"
             >
             <source
-            media="(min-width: 1439px)"
-            class="instructor__image-png"
-            type="image/png"
-            width="255"
-            height="200"
-            srcset="img/instructors/prokofyev-desktop@1x.png 1x, img/instructors/prokofyev-desktop@2x.png 2x"
+              media="(min-width: 1439px)"
+              class="instructor__image-png"
+              type="image/png"
+              width="255"
+              height="200"
+              data-srcset="img/instructors/[[id]]-desktop@1x.png 1x, img/instructors/[[id]]-desktop@2x.png 2x"
             >
             <source
-            media="(min-width: 767px)"
-            class="instructor__image-webp"
-            type="image/webp"
-            width="182"
-            height="200"
-            srcset="img/instructors/prokofyev-tablet@1x.webp 1x, img/instructors/prokofyev-tablet@2x.webp 2x"
+              media="(min-width: 767px)"
+              class="instructor__image-webp"
+              type="image/webp"
+              width="182"
+              height="200"
+              data-srcset="img/instructors/[[id]]-tablet@1x.webp 1x, img/instructors/[[id]]-tablet@2x.webp 2x"
             >
             <source
-            media="(min-width: 767px)"
-            class="instructor__image-png"
-            type="image/png"
-            width="182"
-            height="200"
-            srcset="img/instructors/prokofyev-tablet@1x.png 1x, img/instructors/prokofyev-tablet@2x.png 2x"
+              media="(min-width: 767px)"
+              class="instructor__image-png"
+              type="image/png"
+              width="182"
+              height="200"
+              data-srcset="img/instructors/[[id]]-tablet@1x.png 1x, img/instructors/[[id]]-tablet@2x.png 2x"
             >
             <img
-            class="instructor__image"
-            width="255"
-            height="200"
-            alt=""
-            src="img/instructors/prokofyev-mobile@1x.png"
+              class="instructor__image"
+              width="255"
+              height="200"
+              alt=""
+              data-srcset="img/instructors/[[id]]-mobile@1x.png 1x, img/instructors/[[id]]-mobile@2x.png 2x"
             >
           </picture>
           <a class="instructor__name" href="#">
@@ -786,6 +785,70 @@
               </svg>
           </a>
           <span></span>
+        </div>
+      </article>
+    </template>
+
+    <!--темплейт карточки Отзыв-->
+    <template id="review">
+      <article class="reviews__list-item review swiper-slide">
+        <div class="review__container">
+          <picture class="review__image">
+            <source
+              media="(min-width: 1439px)"
+              class="review__image-webp"
+              type="image/webp"
+              width="258"
+              height="253"
+              srcset="img/reviews/frolov-desktop@1x.webp 1x, img/reviews/frolov-desktop@2x.webp 2x"
+            >
+            <source
+              media="(min-width: 1439px)"
+              class="review__image-png"
+              type="image/png"
+              width="258"
+              height="253"
+              srcset="img/reviews/frolov-desktop@1x.png 1x, img/reviews/frolov-desktop@2x.png 2x"
+            >
+            <source
+              media="(min-width: 767px)"
+              class="review__image-webp"
+              type="image/webp"
+              width="186"
+              height="237"
+            >
+            <source
+              media="(min-width: 767px)"
+              class="review__image-png"
+              type="image/png"
+              width="186"
+              height="237"
+              srcset="img/reviews/frolov-tablet@1x.png 1x, img/reviews/frolov-tablet@2x.png 2x"
+            >
+            <img
+              class="review__image"
+              width="250"
+              height="169"
+              alt=""
+              src="img/reviews/frolov-mobile@1x.png"
+            >
+          </picture>
+
+          <div class="review__text">
+            <span>
+              <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями.
+              Впечатления потрясающие! Инструкторы, настоящие эксперты,
+              всему научили, все показали. Делились историями о&nbsp;местах,
+              людях, культуре места.</p>
+              <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;
+              до&nbsp;этого и&nbsp;после. Ещё никогда не&nbsp;отдыхал так душой
+              и&nbsp;телом. Всем очень рекомендую!</p>
+            </span>
+            <div class="review__person">
+              <p class="review__name">Фролов Александр</p>
+              <p class="review__details">38 лет, Москва</p>
+            </div>
+          </div>
         </div>
       </article>
     </template>

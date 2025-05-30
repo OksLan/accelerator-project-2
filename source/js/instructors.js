@@ -34,33 +34,37 @@ let addInstructor = (instructor) => {
   const instructorElement = instructorTemplate
     .querySelector(".instructors__list-item")
     .cloneNode(true);
-  instructorElement.classList.add("swiper-slide");
 
   const sources = instructorElement.querySelectorAll('source');
   sources.forEach(source => {
-    let srcset = source.getAttribute('srcset');
-    if (srcset) {
-      srcset = srcset
-        .replaceAll('prokofyev', instructor.foto);
-      source.setAttribute('srcset', srcset);
+    const dataSrcset = source.getAttribute('data-srcset');
+    if (dataSrcset) {
+      const replaced = dataSrcset.replaceAll('[[id]]', instructor.foto);
+      source.setAttribute('srcset', replaced);
+      source.removeAttribute('data-srcset'); // удалить data-* чтобы не дублировалось
     }
   });
 
   const img = instructorElement.querySelector("img.instructor__image");
   if (img) {
-    const currentSrc = img.getAttribute("src");
-    img.setAttribute("src", currentSrc.replace('prokofyev', instructor.foto));
+    const dataSrcset = img.getAttribute("data-srcset");
+    if (dataSrcset) {
+      img.setAttribute("srcset", dataSrcset.replaceAll('[[id]]', instructor.foto));
+      img.removeAttribute("data-srcset");
+    }
 
-    const tempDiv = document.createElement('div');
+    const tempDiv = document.createElement("div");
     tempDiv.innerHTML = instructor.name;
     img.alt = tempDiv.textContent.trim();
   }
 
-  const nameElement = instructorElement.querySelector(".instructor__name h7");
+  // имя
+  const nameElement = instructorElement.querySelector(".instructor__name h6");
   if (nameElement) {
     nameElement.innerHTML = instructor.name;
   }
 
+  // описание
   const descElement = instructorElement.querySelector("span");
   if (descElement) {
     descElement.innerHTML = instructor.description;
@@ -70,7 +74,5 @@ let addInstructor = (instructor) => {
 };
 
 export function showInstructors(list) {
-  for (const instructor of list) {
-    addInstructor(instructor);
-  }
+  list.forEach(addInstructor);
 }
