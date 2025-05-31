@@ -118,17 +118,20 @@ const swiperReviews = new Swiper('.reviews__swiper', {
     1440: {
       slidesPerView: 1,
       spaceBetween: 120,
+      centeredSlides: false,
     },
     768: {
       slidesPerView: 1,
       spaceBetween: 30,
+      centeredSlides: false,
     },
     320: {
       slidesPerView: 1,
+      spaceBetween: 15,
     },
   },
 
-    // Navigation buttons
+  // Navigation buttons
   navigation: {
   nextEl: '.reviews__button--next',
   prevEl: '.reviews__button--prev',
