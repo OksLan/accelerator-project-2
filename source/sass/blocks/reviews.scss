@@ -1,5 +1,6 @@
 .reviews {
   background-color: aliceblue;
+  padding: 1px 0;
 }
 
 .reviews-wrapper {
@@ -8,6 +9,10 @@
   @media screen and (width < 1439px)  {
     padding: 36px 0 0;
   }
+}
+
+.reviews__buttons {
+  display: none !important;
 }
 
 .reviews__heading {
@@ -94,6 +99,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (width < 767px)  {
+    gap: 15px;
+  }
 
   & span {
     font-size: 14px;
