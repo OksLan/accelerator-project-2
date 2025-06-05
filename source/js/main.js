@@ -140,6 +140,33 @@ const swiperReviews = new Swiper('.reviews__swiper', {
 },
 });
 
+/* ADVANTAGES свайпер */
+let advSwiper = null;
+
+const toggleAdvSwiper = () => {
+  const isDesktop = window.innerWidth >= 1440;
+
+  if (isDesktop && advSwiper === null) {
+    advSwiper = new Swiper('.adv__swiper', {
+      modules: [Navigation],
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.adv__button--next',
+        prevEl: '.adv__button--prev',
+        clickable: true,
+      },
+    });
+  } else if (!isDesktop && advSwiper !== null) {
+    advSwiper.destroy(true, true);
+    advSwiper = null;
+  }
+};
+
+window.addEventListener('load', toggleAdvSwiper);
+window.addEventListener('resize', toggleAdvSwiper);
+
 
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {

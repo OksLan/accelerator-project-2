@@ -48,23 +48,7 @@
   }
 }
 
-.adv__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-
-  @media screen and (width < 1439px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  @media screen and (width < 767px) {
-    gap: 15px;
-  }
-}
-
-.adv__list-item {
+.adv__item {
   display: flex !important;
   flex-direction: column;
   text-align: center;
