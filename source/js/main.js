@@ -55,6 +55,7 @@ const swiperTours = new Swiper('.tours__swiper', {
     },
     320: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
   },
 
@@ -90,6 +91,7 @@ const swiperInstructors = new Swiper('.instructors__swiper', {
     },
     320: {
       slidesPerView: 1,
+      spaceBetween: 15,
     },
   },
 

@@ -59,7 +59,7 @@ let addInstructor = (instructor) => {
   }
 
   // имя
-  const nameElement = instructorElement.querySelector(".instructor__name h6");
+  const nameElement = instructorElement.querySelector(".instructor__name h7");
   if (nameElement) {
     nameElement.innerHTML = instructor.name;
   }
