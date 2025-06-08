@@ -167,6 +167,27 @@ const toggleAdvSwiper = () => {
 window.addEventListener('load', toggleAdvSwiper);
 window.addEventListener('resize', toggleAdvSwiper);
 
+/* GALLERY свайпер */
+  const swiper = new Swiper('.gallery-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 5,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        navigation: {
+          nextEl: '.gallery-button-next',
+          prevEl: '.gallery-button-prev',
+        },
+      },
+      1440: {
+        enabled: false,
+      },
+    },
+
+    navigation: false,
+  });
 
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {

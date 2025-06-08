@@ -17,6 +17,10 @@
 .gallery__heading {
   margin-bottom: 46px;
 
+  @media screen and (width < 1439px)  {
+    margin-bottom: 21px;
+  }
+
   @media screen and (width < 767px)  {
     margin-bottom: 31px;
   }
@@ -29,7 +33,7 @@
     }
 
     @media screen and (width < 767px)  {
-      margin-bottom: 37px;
+      margin-bottom: 27px;
     }
   }
 
