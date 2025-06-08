@@ -296,7 +296,7 @@ ul {
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(5, 284px);
-    gap: 7px 5px;
+    gap: 0 5px;
     width: 1440px;
     height: 463px;
     margin-bottom: 3px;

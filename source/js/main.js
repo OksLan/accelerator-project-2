@@ -169,24 +169,25 @@ window.addEventListener('resize', toggleAdvSwiper);
 
 /* GALLERY свайпер */
   const swiper = new Swiper('.gallery-swiper', {
+    modules: [Navigation],
     loop: true,
-    slidesPerView: 1,
-    spaceBetween: 5,
 
     breakpoints: {
+      1440: {
+        enabled: false,
+      },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         navigation: {
           nextEl: '.gallery-button-next',
           prevEl: '.gallery-button-prev',
         },
       },
-      1440: {
-        enabled: false,
+      320: {
+        navigation: false,
+        slidesPerView: 2,
       },
     },
-
-    navigation: false,
   });
 
 /* ФОРМА */
