@@ -13,6 +13,7 @@
 @import "blocks/training";
 @import "blocks/reviews";
 @import "blocks/adv";
+@import "blocks/gallery";
 
 
 body {
@@ -291,3 +292,74 @@ ul {
     fill: #ffffff;
   }
 }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 284px);
+    gap: 7px 5px;
+    width: 1440px;
+    height: 463px;
+
+    @media screen and (width < 1439px)  {
+      width: 768px;
+      height: 418px;
+      grid-template-columns: repeat(253px 252px 253px);
+    }
+
+    @media screen and (width < 767px)  {
+      width: 320px;
+      height: 457px;
+      grid-template-columns: repeat(158px 157px);
+    }
+  }
+
+  .vertical {
+    width: 284px;
+    height: 463px;
+    object-fit: cover;
+
+    @media screen and (width < 1439px)  {
+      width: 253px;
+      height: 418px;
+    }
+
+    @media screen and (width < 767px)  {
+      width: 158px;
+      height: 266px;
+    }
+  }
+
+  .square-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 284px;
+    height: 463px;
+
+    @media screen and (width < 1439px)  {
+      width: 252px;
+      height: 418px;
+    }
+
+    @media screen and (width < 767px)  {
+      width: 157px;
+      height: 266px;
+    }
+  }
+
+  .square {
+    width: 284px;
+    height: 229px;
+    object-fit: cover;
+
+    @media screen and (width < 1439px)  {
+      width: 252px;
+      height: 205.5px;
+    }
+
+    @media screen and (width < 767px)  {
+      width: 157px;
+      height: 75.5px;
+    }
+  }
+
