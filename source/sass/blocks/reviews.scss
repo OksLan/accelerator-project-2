@@ -1,6 +1,6 @@
 .reviews {
-  background-color: aliceblue;
   padding: 1px 0;
+  background-color: aliceblue;
 }
 
 .reviews-wrapper {
@@ -57,7 +57,7 @@
   }
 
   @media screen and (width < 767px)  {
-    margin: 0 5px;
+    margin: 0 5px 20px;
   }
 }
 
@@ -70,6 +70,7 @@
 
   @media screen and (width < 767px)  {
     max-width: 290px;
+    height: 502px !important;
   }
 }
 
@@ -91,6 +92,7 @@
 
     flex-wrap: wrap;
     align-items: stretch;
+    height: 100%;
   }
 }
 

@@ -304,13 +304,13 @@ ul {
     @media screen and (width < 1439px)  {
       width: 768px;
       height: 418px;
-      grid-template-columns: repeat(253px 252px 253px);
+      grid-template-columns: repeat(5, 253px);
     }
 
     @media screen and (width < 767px)  {
       width: 320px;
       height: 457px;
-      grid-template-columns: repeat(158px 157px);
+      grid-template-columns: repeat(5, 157px);
     }
   }
 

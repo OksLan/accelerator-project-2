@@ -150,7 +150,7 @@ const toggleAdvSwiper = () => {
     advSwiper = new Swiper('.adv__swiper', {
       modules: [Navigation],
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 3.5,
       spaceBetween: 30,
       navigation: {
         nextEl: '.adv__button--next',
