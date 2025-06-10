@@ -37,7 +37,7 @@
   @media screen and (width < 767px)  {
     bottom: 10px;
   }
-  }
+ }
 }
 
 .swiper.reviews__swiper {
@@ -61,18 +61,24 @@
   }
 }
 
-.reviews__list-item {
-  max-width: 700px;
-
-  @media screen and (width < 1439px)  {
-    max-width: 565px;
-  }
-
+.reviews__list {
   @media screen and (width < 767px)  {
-    max-width: 290px;
-    height: 502px !important;
+    align-items: stretch; 
   }
-}
+
+    .reviews__list-item {
+      max-width: 700px;
+      
+      @media screen and (width < 1439px)  {
+      max-width: 565px;
+      }
+      
+      @media screen and (width < 767px)  {
+      max-width: 290px;
+      height: auto;
+      }
+    }
+  }
 
 .review__container {
   display: flex;

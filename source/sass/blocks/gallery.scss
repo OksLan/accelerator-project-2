@@ -34,6 +34,17 @@
 
     @media screen and (width < 767px)  {
       margin-bottom: 27px;
+    } 
+
+    &::after {
+      content: "Фотогалерея";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    
+      @media screen and (width < 767px)  {
+        bottom: 10px;
+      }
     }
   }
 
@@ -70,5 +81,26 @@
 
   @media screen and (width < 767px) {
     display: none !important;
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 284px);
+  gap: 0 5px;
+  width: 1440px;
+  height: 463px;
+  margin: 0 auto 3px;
+
+  @media screen and (width < 1439px)  {
+    width: 768px;
+    height: 418px;
+    grid-template-columns: repeat(5, 253px);
+  }
+
+  @media screen and (width < 767px)  {
+    width: 320px;
+    height: 266px;
+    grid-template-columns: repeat(5, 157px);
   }
 }
