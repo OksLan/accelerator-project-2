@@ -34,14 +34,14 @@
 
     @media screen and (width < 767px)  {
       margin-bottom: 27px;
-    } 
+    }
 
     &::after {
       content: "Фотогалерея";
       position: absolute;
       bottom: 0;
       left: 0;
-    
+
       @media screen and (width < 767px)  {
         bottom: 10px;
       }
