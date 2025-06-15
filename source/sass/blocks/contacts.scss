@@ -8,10 +8,6 @@
     flex-direction: column;
   }
 
-  @media screen and (width < 767px) {
-    height: 816px;
-  }
-
   & h3 {
     position: relative;
     margin-bottom: 25px;
@@ -191,5 +187,6 @@
       url("/img/map/map-tablet@1x.webp") type("image/webp") 1x,
       url("/img/map/map-tablet@2x.webp") type("image/webp") 2x,);
     height: 343px;
+    margin-bottom: 20px;
   }
 }

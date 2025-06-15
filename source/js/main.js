@@ -168,6 +168,24 @@ window.addEventListener('load', toggleAdvSwiper);
 window.addEventListener('resize', toggleAdvSwiper);
 
 /* GALLERY свайпер */
+const swiperGallery = new Swiper('.gallery__swiper', {
+  modules: [Navigation],
+  direction: 'horizontal',
+  speed: 500,
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 5,
+
+  // Navigation buttons
+  navigation: {
+  nextEl: '.gallery__button--next',
+  prevEl: '.gallery__button--prev',
+  enabled: true,
+  clickable: true,
+ },
+
+});
+
 
 
 /* ФОРМА */
