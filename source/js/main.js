@@ -186,8 +186,6 @@ const swiperGallery = new Swiper('.gallery__swiper', {
 
 });
 
-
-
 /* ФОРМА */
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form__boxes');

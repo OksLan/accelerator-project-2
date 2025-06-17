@@ -1,5 +1,4 @@
 .training {
-  background-color: aliceblue;
   position: relative;
 
   & p {
@@ -73,10 +72,6 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 56px;
-
-  @media screen and (width < 1439px) {
-    margin-bottom: 25px;
-  }
 }
 
 .training .instructors__list {
@@ -120,6 +115,7 @@
 }
 
 .training__process {
+
   & h5 {
     margin-bottom: 23px;
 
@@ -175,6 +171,7 @@ $areas: (
     column-gap: 0;
     row-gap: 25px;
     margin-left: 29px;
+    margin-bottom: 0;
 }
 
   &::before {

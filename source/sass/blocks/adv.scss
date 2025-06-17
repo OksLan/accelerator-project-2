@@ -1,3 +1,13 @@
+.adv {
+  position: relative;
+
+  @media screen and (width < 1439px) {
+    background-image: url("../../img/clouds/clouds-3-tablet.png");
+    background-repeat: no-repeat;
+    background-position-y: 194px;
+  }
+}
+
 .adv-wrapper {
   padding: 100px 0;
 
@@ -66,6 +76,7 @@
   max-width: 380px;
   padding: 40px 20px;
   height: auto;
+  background-color: #ffffff;
 
   @media screen and (width < 1439px) {
     max-width: calc(50% - 15px);

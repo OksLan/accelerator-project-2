@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: aliceblue;
+  z-index: 0;
 
   @media screen and (width < 1439px)  {
     flex-direction: column;

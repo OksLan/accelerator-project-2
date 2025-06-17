@@ -1,5 +1,5 @@
 .gallery {
-  background-color: aliceblue;
+  z-index: 0;
 }
 
 .gallery-wrapper {
@@ -72,13 +72,22 @@
 }
 
 .gallery__buttons {
+  display: none;
+
   @media screen and (width < 1439px)  {
+    display: block;
     align-items: end;
+  }
+
+  @media screen and (width < 767px) {
+    display: none;
   }
 }
 
 .gallery__swiper {
   margin: 0 auto 3px;
+  max-width: 100%;
+  width: fit-content;
 
   .swiper-wrapper {
     display: flex;
