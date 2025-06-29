@@ -1,6 +1,7 @@
 .reviews {
   padding: 1px 0;
   position: relative;
+  background-color: blanchedalmond;
 }
 
 .reviews-wrapper {
@@ -75,7 +76,6 @@
 
     @media screen and (width < 767px)  {
       max-width: 290px;
-      height: 484px;
     }
   }
 }

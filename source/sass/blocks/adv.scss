@@ -1,8 +1,20 @@
 .adv {
   position: relative;
 
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/clouds/clouds-3-tablet.png"), linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 447px;
+    top: -350px;
+    z-index: -1;
+  }
+
   @media screen and (width < 1439px) {
-    background-image: url("../../img/clouds/clouds-3-tablet.png");
+    background-image: url("../../img/clouds/clouds-3-tablet.png"), linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
     background-repeat: no-repeat;
     background-position-y: 194px;
   }
