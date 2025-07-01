@@ -1,5 +1,18 @@
 .tours {
   position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../../img/clouds/clouds-1-desktop.png");
+    background-repeat: no-repeat;
+    width: 602px;
+    height: 1630px;
+    z-index: -1;
+    right: 0;
+    top: -128px;
+  }
 }
 
 .tours-wrapper {
