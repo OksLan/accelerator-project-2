@@ -18,6 +18,10 @@
       top: 177px;
       height: 996px;
     }
+
+    @media screen and (width < 767px) {
+      display: none;
+    }
   }
 }
 
